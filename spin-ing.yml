@@ -12,7 +12,7 @@ metadata:
 spec:
   rules:
   -
-    host: <redacted for publishing> 
+    # host: my-redacted-ingress-lb 
     # ^ If we have other things running in our cluster, we should uncomment this line and specify a valid DNS name
     http:
       paths:
