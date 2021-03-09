@@ -21,7 +21,7 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/cont
 ```
 Check ingress:
 ```
-% kubectl get svc -n ingress-nginx
+kubectl get svc -n ingress-nginx
 NAME                                 TYPE           CLUSTER-IP      EXTERNAL-IP                                                              PORT(S)                      AGE
 ingress-nginx-controller             LoadBalancer   10.100.126.27   my-redacted-ingress-lb                                               80:30940/TCP,443:31009/TCP   33m
 ingress-nginx-controller-admission   ClusterIP      10.100.62.144   <none>                                                                   443/TCP                      33m
