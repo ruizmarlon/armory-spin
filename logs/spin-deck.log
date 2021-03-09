@@ -1,0 +1,24 @@
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 192.168.56.203. Set the 'ServerName' directive globally to suppress this message
+192.168.69.234 - - [09/Mar/2021:03:14:44 +0000] "GET / HTTP/1.1" 200 9086
+192.168.69.234 - - [09/Mar/2021:03:14:44 +0000] "GET /settings.js HTTP/1.1" 200 1132
+192.168.69.234 - - [09/Mar/2021:03:14:44 +0000] "GET /app.be498.js HTTP/1.1" 200 25256
+192.168.69.234 - - [09/Mar/2021:03:14:44 +0000] "GET /settings-local.js HTTP/1.1" 200 1169
+192.168.69.234 - - [09/Mar/2021:03:14:44 +0000] "GET /3.js HTTP/1.1" 200 3890794
+192.168.69.234 - - [09/Mar/2021:03:14:46 +0000] "GET /SourceSansPro-Regular.ttf.5c0f5.woff2 HTTP/1.1" 200 77664
+192.168.69.234 - - [09/Mar/2021:03:14:47 +0000] "GET /plugin-manifest.json HTTP/1.1" 200 3
+192.168.69.234 - - [09/Mar/2021:03:14:47 +0000] "GET /SourceSansPro-ExtraLight.ttf.79710.woff2 HTTP/1.1" 200 73196
+192.168.69.234 - - [09/Mar/2021:03:14:47 +0000] "GET /glyphicons-halflings-regular.448c3.woff2 HTTP/1.1" 200 18028
+192.168.69.234 - - [09/Mar/2021:03:14:47 +0000] "GET /favicon.ico HTTP/1.1" 200 15086
+192.168.69.234 - - [09/Mar/2021:03:14:47 +0000] "GET /fa-solid-900.55eb2.woff2 HTTP/1.1" 200 76120
+192.168.69.234 - - [09/Mar/2021:03:14:47 +0000] "GET /SourceSansPro-Semibold.ttf.a0a70.woff2 HTTP/1.1" 200 77452
+192.168.69.234 - - [09/Mar/2021:03:20:09 +0000] "GET /config/getuser?index=0 HTTP/1.1" 404 196
+192.168.69.234 - - [09/Mar/2021:03:26:03 +0000] "GET / HTTP/1.1" 200 22528
+192.168.69.234 - - [09/Mar/2021:03:46:35 +0000] "GET /plugin-manifest.json HTTP/1.1" 304 -
+192.168.69.234 - - [09/Mar/2021:03:49:36 +0000] "GET /.env HTTP/1.1" 404 196
+192.168.69.234 - - [09/Mar/2021:03:49:56 +0000] "GET /api/vi/health HTTP/1.1" 404 196
+192.168.69.234 - - [09/Mar/2021:03:52:16 +0000] "GET /.env HTTP/1.1" 404 196
+192.168.69.234 - - [09/Mar/2021:03:52:16 +0000] "POST / HTTP/1.1" 200 9086
+192.168.69.234 - - [09/Mar/2021:03:52:47 +0000] "GET / HTTP/1.1" 200 22528
+192.168.69.234 - - [09/Mar/2021:03:55:37 +0000] "GET / HTTP/1.1" 200 22528
+192.168.69.234 - - [09/Mar/2021:03:57:42 +0000] "GET / HTTP/1.1" 200 22528
+192.168.69.234 - - [09/Mar/2021:03:57:42 +0000] "GET / HTTP/1.1" 200 9086

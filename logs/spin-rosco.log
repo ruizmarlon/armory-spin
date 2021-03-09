@@ -1,0 +1,122 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.codehaus.groovy.vmplugin.v7.Java7$1 (file:/opt/rosco/lib/groovy-2.5.9.jar) to constructor java.lang.invoke.MethodHandles$Lookup(java.lang.Class,int)
+WARNING: Please consider reporting this to the maintainers of org.codehaus.groovy.vmplugin.v7.Java7$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+                _,.---._      ,-,--.    _,.----.     _,.---._
+  .-.,.---.   ,-.' , -  `.  ,-.'-  _\ .' .' -   \  ,-.' , -  `.
+ /==/  `   \ /==/_,  ,  - \/==/_ ,_.'/==/  ,  ,-' /==/_,  ,  - \
+|==|-, .=., |==|   .=.     \==\  \   |==|-   |  .|==|   .=.     |
+|==|   '='  /==|_ : ;=:  - |\==\ -\  |==|_   `-' \==|_ : ;=:  - |
+|==|- ,   .'|==| , '='     |_\==\ ,\ |==|   _  , |==| , '='     |
+|==|_  . ,'. \==\ -    ,_ //==/\/ _ |\==\.       /\==\ -    ,_ /
+/==/  /\ ,  ) '.='. -   .' \==\ - , / `-.`.___.-'  '.='. -   .'
+`--`-`--`--'    `--`--''    `--`---'                 `--`--''
+2021-03-09 03:05:20.966  INFO 1 --- [           main] com.netflix.spinnaker.rosco.Main         : Starting Main on spin-rosco-778c89bfd7-vp78k with PID 1 (/opt/rosco/lib/rosco-web-0.22.0-20201009170017.jar started by spinnaker in /packer)
+2021-03-09 03:05:20.972  INFO 1 --- [           main] com.netflix.spinnaker.rosco.Main         : The following profiles are active: local
+2021-03-09 03:05:24.123  INFO 1 --- [           main] i.g.r.utils.RxJava2OnClasspathCondition  : RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
+2021-03-09 03:05:24.124  INFO 1 --- [           main] i.g.r.utils.ReactorOnClasspathCondition  : Reactor related Aspect extensions are not activated because Reactor is not on the classpath.
+2021-03-09 03:05:24.139  INFO 1 --- [           main] i.g.r.utils.RxJava2OnClasspathCondition  : RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
+2021-03-09 03:05:24.139  INFO 1 --- [           main] i.g.r.utils.ReactorOnClasspathCondition  : Reactor related Aspect extensions are not activated because Reactor is not on the classpath.
+2021-03-09 03:05:24.188  INFO 1 --- [           main] i.g.r.utils.RxJava2OnClasspathCondition  : RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
+2021-03-09 03:05:24.189  INFO 1 --- [           main] i.g.r.utils.ReactorOnClasspathCondition  : Reactor related Aspect extensions are not activated because Reactor is not on the classpath.
+2021-03-09 03:05:24.209  INFO 1 --- [           main] i.g.r.utils.RxJava2OnClasspathCondition  : RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
+2021-03-09 03:05:24.210  INFO 1 --- [           main] i.g.r.utils.ReactorOnClasspathCondition  : Reactor related Aspect extensions are not activated because Reactor is not on the classpath.
+2021-03-09 03:05:24.227  INFO 1 --- [           main] i.g.r.utils.RxJava2OnClasspathCondition  : RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
+2021-03-09 03:05:24.231  INFO 1 --- [           main] i.g.r.utils.ReactorOnClasspathCondition  : Reactor related Aspect extensions are not activated because Reactor is not on the classpath.
+2021-03-09 03:05:25.105  INFO 1 --- [           main] org.pf4j.DefaultPluginManager            : PF4J version 3.2.0 in 'deployment' mode
+2021-03-09 03:05:25.695  WARN 1 --- [           main] c.n.s.config.PluginsAutoConfiguration    : No remote repositories defined, will fallback to looking for a 'repositories.json' file next to the application executable
+2021-03-09 03:05:25.748  INFO 1 --- [           main] org.pf4j.util.FileUtils                  : Expanded plugin zip 'armory-observability-plugin-v1.2.0.zip' in 'armory-observability-plugin-v1.2.0'
+2021-03-09 03:05:25.752  INFO 1 --- [           main] org.pf4j.util.FileUtils                  : Expanded plugin zip 'rosco.zip' in 'rosco'
+2021-03-09 03:05:25.758  INFO 1 --- [           main] org.pf4j.AbstractPluginManager           : Plugin '/opt/rosco/plugins/armory-observability-plugin-v1.2.0/rosco' is disabled
+2021-03-09 03:05:25.774  INFO 1 --- [           main] org.pf4j.AbstractPluginManager           : Plugin 'Armory.ObservabilityPlugin@1.2.0' resolved
+2021-03-09 03:05:25.776  INFO 1 --- [           main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'armoryCommonsConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2021-03-09 03:05:25.777  INFO 1 --- [           main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'com.netflix.spinnaker.kork.PlatformComponents' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2021-03-09 03:05:26.530  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'secretsManagerSecretEngine' of type [com.netflix.spinnaker.kork.secrets.engines.SecretsManagerSecretEngine] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:05:26.540  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 's3SecretEngine' of type [com.netflix.spinnaker.kork.secrets.engines.S3SecretEngine] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:05:26.547  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'gcsSecretEngine' of type [com.netflix.spinnaker.kork.secrets.engines.GcsSecretEngine] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:05:26.548  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'noopSecretEngine' of type [com.netflix.spinnaker.kork.secrets.engines.NoopSecretEngine] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:05:26.548  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'secretEngineRegistry' of type [com.netflix.spinnaker.kork.secrets.SecretEngineRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:05:26.549  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'secretManager' of type [com.netflix.spinnaker.kork.secrets.SecretManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:05:27.739  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8087 (http)
+2021-03-09 03:05:27.753  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-09 03:05:27.753  INFO 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-09 03:05:28.214  INFO 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-09 03:05:28.215  INFO 1 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7076 ms
+2021-03-09 03:05:30.284  INFO 1 --- [           main] c.n.s.rosco.config.RoscoConfiguration    : Rosco hostname is spin-rosco-778c89bfd7-vp78k
+2021-03-09 03:05:31.965  INFO 1 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path ''
+2021-03-09 03:05:32.373  INFO 1 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-09 03:05:33.031  INFO 1 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-09 03:05:36.072  INFO 1 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6d22dec3-a1ec-473f-b2ab-3edea81b9996
+
+2021-03-09 03:05:36.202  INFO 1 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequest$EndpointRequestMatcher@3cb8b037, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7e3f3a34, org.springframework.security.web.context.SecurityContextPersistenceFilter@15329cf9, org.springframework.security.web.header.HeaderWriterFilter@325e1229, org.springframework.security.web.csrf.CsrfFilter@4cf2b47a, org.springframework.security.web.authentication.logout.LogoutFilter@541b377d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73f3bf4f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4424285, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2c238bbf, org.springframework.security.web.session.SessionManagementFilter@313b6907, org.springframework.security.web.access.ExceptionTranslationFilter@2cfc81f8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7a54fc29]
+2021-03-09 03:05:36.207  INFO 1 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/spectator/metrics'], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2532e07e, org.springframework.security.web.context.SecurityContextPersistenceFilter@26a8e303, org.springframework.security.web.header.HeaderWriterFilter@6666410a, org.springframework.security.web.csrf.CsrfFilter@1e0771af, org.springframework.security.web.authentication.logout.LogoutFilter@156437f7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@18365e98, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4c8c3285, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c33d81f, org.springframework.security.web.session.SessionManagementFilter@30760c5, org.springframework.security.web.access.ExceptionTranslationFilter@4f2e21d7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@79a8b897]
+2021-03-09 03:05:36.243  INFO 1 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-03-09 03:05:36.320  INFO 1 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-03-09 03:05:36.337  INFO 1 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-03-09 03:05:36.394  INFO 1 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-03-09 03:05:36.775  INFO 1 --- [           main] c.n.spinnaker.rosco.executor.BakePoller  : Starting polling agent for rosco instance 12c0ad6f-e93b-4619-8763-c5a7f72bae3b@spin-rosco-778c89bfd7-vp78k...
+2021-03-09 03:05:36.778  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:05:36.819  WARN 1 --- [           main] c.n.s.k.d.NoDiscoveryStatusPublisher     : No service discovery client is available, assuming application is UP
+2021-03-09 03:05:36.820  INFO 1 --- [           main] c.n.s.k.d.DiscoveryStatusListener        : Instance status has changed to UP in service discovery
+2021-03-09 03:05:36.926  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8087 (http) with context path ''
+2021-03-09 03:05:36.935  INFO 1 --- [           main] com.netflix.spinnaker.rosco.Main         : Started Main in 17.244 seconds (JVM running for 19.034)
+2021-03-09 03:05:41.809  INFO 1 --- [0.0-8087-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-09 03:05:41.809  INFO 1 --- [0.0-8087-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-09 03:05:41.839  INFO 1 --- [0.0-8087-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 30 ms
+2021-03-09 03:06:36.779  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:07:36.780  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:08:36.780  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:09:36.781  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:10:36.781  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:11:36.782  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:12:36.782  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:13:36.783  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:14:36.783  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:15:36.784  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:16:36.784  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:17:36.785  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:18:36.785  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:19:36.786  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:20:36.787  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:21:36.787  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:22:36.788  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:23:36.788  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:24:36.789  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:25:36.789  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:26:36.790  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:27:36.790  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:28:36.791  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:29:36.791  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:30:36.792  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:31:36.792  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:32:36.793  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:33:36.793  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:34:36.794  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:35:36.794  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:36:36.794  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:37:36.795  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:38:36.795  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:39:36.796  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:40:36.796  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:41:36.797  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:42:36.797  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:43:36.798  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:44:36.798  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:45:36.798  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:46:36.799  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:47:36.799  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:48:36.800  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:49:36.800  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:50:36.801  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:51:36.801  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:52:36.802  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:53:36.802  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:54:36.802  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:55:36.803  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:56:36.803  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:57:36.804  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:58:36.804  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:59:36.805  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.

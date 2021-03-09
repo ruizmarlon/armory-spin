@@ -1,0 +1,162 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.5.RELEASE)
+
+2021-03-09 03:05:47.429  INFO 1 --- [           main] com.netflix.spinnaker.front50.Main       : Starting Main on spin-front50-7c4b8d4bd8-ptj4n with PID 1 (/opt/front50/lib/front50-web-0.26.0-20201013163321.jar started by spinnaker in /)
+2021-03-09 03:05:47.433  INFO 1 --- [           main] com.netflix.spinnaker.front50.Main       : The following profiles are active: test,local
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.codehaus.groovy.vmplugin.v7.Java7$1 (file:/opt/front50/lib/groovy-2.5.9.jar) to constructor java.lang.invoke.MethodHandles$Lookup(java.lang.Class,int)
+WARNING: Please consider reporting this to the maintainers of org.codehaus.groovy.vmplugin.v7.Java7$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2021-03-09 03:05:50.506  INFO 1 --- [           main] i.g.r.utils.RxJava2OnClasspathCondition  : RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
+2021-03-09 03:05:50.511  INFO 1 --- [           main] i.g.r.utils.ReactorOnClasspathCondition  : Reactor related Aspect extensions are not activated because Reactor is not on the classpath.
+2021-03-09 03:05:50.547  INFO 1 --- [           main] i.g.r.utils.RxJava2OnClasspathCondition  : RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
+2021-03-09 03:05:50.552  INFO 1 --- [           main] i.g.r.utils.ReactorOnClasspathCondition  : Reactor related Aspect extensions are not activated because Reactor is not on the classpath.
+2021-03-09 03:05:50.597  INFO 1 --- [           main] i.g.r.utils.RxJava2OnClasspathCondition  : RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
+2021-03-09 03:05:50.600  INFO 1 --- [           main] i.g.r.utils.ReactorOnClasspathCondition  : Reactor related Aspect extensions are not activated because Reactor is not on the classpath.
+2021-03-09 03:05:50.628  INFO 1 --- [           main] i.g.r.utils.RxJava2OnClasspathCondition  : RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
+2021-03-09 03:05:50.636  INFO 1 --- [           main] i.g.r.utils.ReactorOnClasspathCondition  : Reactor related Aspect extensions are not activated because Reactor is not on the classpath.
+2021-03-09 03:05:50.657  INFO 1 --- [           main] i.g.r.utils.RxJava2OnClasspathCondition  : RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
+2021-03-09 03:05:50.660  INFO 1 --- [           main] i.g.r.utils.ReactorOnClasspathCondition  : Reactor related Aspect extensions are not activated because Reactor is not on the classpath.
+2021-03-09 03:05:51.711  INFO 1 --- [           main] org.pf4j.DefaultPluginManager            : PF4J version 3.2.0 in 'deployment' mode
+2021-03-09 03:05:52.576  WARN 1 --- [           main] c.n.s.config.PluginsAutoConfiguration    : No remote repositories defined, will fallback to looking for a 'repositories.json' file next to the application executable
+2021-03-09 03:05:52.690  INFO 1 --- [           main] org.pf4j.util.FileUtils                  : Expanded plugin zip 'armory-observability-plugin-v1.2.0.zip' in 'armory-observability-plugin-v1.2.0'
+2021-03-09 03:05:52.739  INFO 1 --- [           main] org.pf4j.util.FileUtils                  : Expanded plugin zip 'front50.zip' in 'front50'
+2021-03-09 03:05:52.756  INFO 1 --- [           main] org.pf4j.AbstractPluginManager           : Plugin '/opt/front50/plugins/armory-observability-plugin-v1.2.0/front50' is disabled
+2021-03-09 03:05:52.799  INFO 1 --- [           main] org.pf4j.AbstractPluginManager           : Plugin 'Armory.ObservabilityPlugin@1.2.0' resolved
+2021-03-09 03:05:52.808  INFO 1 --- [           main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'armoryCommonsConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2021-03-09 03:05:52.810  INFO 1 --- [           main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'com.netflix.spinnaker.kork.PlatformComponents' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2021-03-09 03:05:54.005  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'secretsManagerSecretEngine' of type [com.netflix.spinnaker.kork.secrets.engines.SecretsManagerSecretEngine] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:05:54.010  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 's3SecretEngine' of type [com.netflix.spinnaker.kork.secrets.engines.S3SecretEngine] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:05:54.016  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'gcsSecretEngine' of type [com.netflix.spinnaker.kork.secrets.engines.GcsSecretEngine] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:05:54.017  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'noopSecretEngine' of type [com.netflix.spinnaker.kork.secrets.engines.NoopSecretEngine] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:05:54.018  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'secretEngineRegistry' of type [com.netflix.spinnaker.kork.secrets.SecretEngineRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:05:54.018  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'secretManager' of type [com.netflix.spinnaker.kork.secrets.SecretManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:05:54.538  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@5d0ca8a5' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:05:54.571  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:05:56.024  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-09 03:05:56.094  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-09 03:05:56.098  INFO 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-09 03:05:56.591  INFO 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-09 03:05:56.592  INFO 1 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8623 ms
+2021-03-09 03:06:01.560  INFO 1 --- [           main] c.n.s.f.m.a.DefaultApplicationDAO        : Warming Cache
+2021-03-09 03:06:02.235  INFO 1 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-03-09 03:06:02.367  INFO 1 --- [           main] c.n.s.f.model.project.DefaultProjectDAO  : Warming Cache
+2021-03-09 03:06:02.465  INFO 1 --- [           main] c.n.s.f.m.pipeline.DefaultPipelineDAO    : Warming Cache
+2021-03-09 03:06:02.543  INFO 1 --- [           main] c.n.s.f.m.p.DefaultPipelineStrategyDAO   : Warming Cache
+2021-03-09 03:06:03.835  INFO 1 --- [           main] .s.f.m.a.DefaultApplicationPermissionDAO : Warming Cache
+2021-03-09 03:06:04.160  INFO 1 --- [           main] c.n.s.f.m.p.DefaultPipelineTemplateDAO   : Warming Cache
+2021-03-09 03:06:04.314  WARN 1 --- [           main] uration$JodaDateTimeJacksonConfiguration : Auto-configuration of Jackson's Joda-Time integration is deprecated in favor of using java.time (JSR-310).
+2021-03-09 03:06:04.570  INFO 1 --- [           main] c.n.s.f.m.n.DefaultNotificationDAO       : Warming Cache
+2021-03-09 03:06:04.678  INFO 1 --- [           main] c.n.s.f.m.s.DefaultServiceAccountDAO     : Warming Cache
+2021-03-09 03:06:05.049  INFO 1 --- [           main] .p.DefaultPluginVersionPinningRepository : Warming Cache
+2021-03-09 03:06:05.142  INFO 1 --- [           main] c.n.s.f.m.p.DefaultPluginInfoRepository  : Warming Cache
+2021-03-09 03:06:05.322  INFO 1 --- [           main] c.n.s.f.m.snapshot.DefaultSnapshotDAO    : Warming Cache
+2021-03-09 03:06:07.503  INFO 1 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path ''
+2021-03-09 03:06:07.957  INFO 1 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 33010d16-9cd5-4ef2-af42-4e5eb08ff4db
+
+2021-03-09 03:06:08.338  INFO 1 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequest$EndpointRequestMatcher@934375e, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@88d308b, org.springframework.security.web.context.SecurityContextPersistenceFilter@34538dde, org.springframework.security.web.header.HeaderWriterFilter@606be171, org.springframework.security.web.csrf.CsrfFilter@1b9bb6e6, org.springframework.security.web.authentication.logout.LogoutFilter@7a082f8a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@fe9d54b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@747ef51d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ed810f3, org.springframework.security.web.session.SessionManagementFilter@42e52d94, org.springframework.security.web.access.ExceptionTranslationFilter@5f0b3abb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5a90df0]
+2021-03-09 03:06:08.356  INFO 1 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/spectator/metrics'], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7522ea53, org.springframework.security.web.context.SecurityContextPersistenceFilter@2053e50a, org.springframework.security.web.header.HeaderWriterFilter@d750a, org.springframework.security.web.csrf.CsrfFilter@1a00440d, org.springframework.security.web.authentication.logout.LogoutFilter@54ba8e11, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@674d14ff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@c038839, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@52d48643, org.springframework.security.web.session.SessionManagementFilter@38ebee36, org.springframework.security.web.access.ExceptionTranslationFilter@1a7ba443, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@52ce11b5]
+2021-03-09 03:06:08.358  INFO 1 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@66e81cdd, com.netflix.spinnaker.fiat.shared.FiatAuthenticationFilter@691ff4fe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3d426638, org.springframework.security.web.access.ExceptionTranslationFilter@10f868dd]
+2021-03-09 03:06:08.593  INFO 1 --- [           main] c.n.s.f.m.d.DefaultDeliveryRepository    : Warming Cache
+2021-03-09 03:06:08.580  INFO 1 --- [    scheduler-5] c.n.s.f.m.p.PluginVersionCleanupAgent    : Starting cleanup
+2021-03-09 03:06:08.980  INFO 1 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-09 03:06:10.056  INFO 1 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-09 03:06:14.842  INFO 1 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-03-09 03:06:14.877  INFO 1 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-03-09 03:06:15.137  INFO 1 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-03-09 03:06:15.955  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: batchUpdateUsingPOST_1
+2021-03-09 03:06:15.966  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_1
+2021-03-09 03:06:15.970  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2021-03-09 03:06:15.991  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: batchUpdateUsingPOST_2
+2021-03-09 03:06:16.005  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_2
+2021-03-09 03:06:16.034  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: batchUpdateUsingPOST_3
+2021-03-09 03:06:16.045  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_3
+2021-03-09 03:06:16.056  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_1
+2021-03-09 03:06:16.059  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getHistoryUsingGET_1
+2021-03-09 03:06:16.069  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingGET_1
+2021-03-09 03:06:16.082  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listByApplicationUsingGET_1
+2021-03-09 03:06:16.090  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_1
+2021-03-09 03:06:16.121  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: batchUpdateUsingPOST_4
+2021-03-09 03:06:16.151  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_2
+2021-03-09 03:06:16.180  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_4
+2021-03-09 03:06:16.300  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: batchUpdateUsingPOST_5
+2021-03-09 03:06:16.303  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_5
+2021-03-09 03:06:16.307  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getHistoryUsingGET_2
+2021-03-09 03:06:16.314  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingGET_2
+2021-03-09 03:06:16.317  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listByApplicationUsingGET_2
+2021-03-09 03:06:16.324  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_2
+2021-03-09 03:06:16.331  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_1
+2021-03-09 03:06:16.339  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_6
+2021-03-09 03:06:16.370  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_2
+2021-03-09 03:06:16.375  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingGET_3
+2021-03-09 03:06:16.395  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_3
+2021-03-09 03:06:16.398  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_2
+2021-03-09 03:06:16.478  INFO 1 --- [    scheduler-2] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:06:16.480  WARN 1 --- [           main] c.n.s.k.d.NoDiscoveryStatusPublisher     : No service discovery client is available, assuming application is UP
+2021-03-09 03:06:16.489  INFO 1 --- [           main] c.n.s.k.d.DiscoveryStatusListener        : Instance status has changed to UP in service discovery
+2021-03-09 03:06:16.580  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-09 03:06:16.590  INFO 1 --- [           main] com.netflix.spinnaker.front50.Main       : Started Main in 32.023 seconds (JVM running for 33.246)
+2021-03-09 03:06:20.412  INFO 1 --- [0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-09 03:06:20.412  INFO 1 --- [0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-09 03:06:20.431  INFO 1 --- [0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2021-03-09 03:07:16.479  INFO 1 --- [    scheduler-6] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:08:16.480  INFO 1 --- [    scheduler-4] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:09:16.480  INFO 1 --- [    scheduler-3] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:10:16.481  INFO 1 --- [    scheduler-4] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:11:16.481  INFO 1 --- [    scheduler-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:12:16.482  INFO 1 --- [    scheduler-5] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:13:16.482  INFO 1 --- [    scheduler-8] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:14:16.482  INFO 1 --- [    scheduler-2] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:15:16.483  INFO 1 --- [    scheduler-9] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:16:16.483  INFO 1 --- [    scheduler-7] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:17:16.484  INFO 1 --- [    scheduler-9] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:18:16.484  INFO 1 --- [    scheduler-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:19:16.485  INFO 1 --- [    scheduler-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:20:16.485  INFO 1 --- [   scheduler-10] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:21:16.486  INFO 1 --- [    scheduler-5] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:22:16.487  INFO 1 --- [    scheduler-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:23:16.487  INFO 1 --- [    scheduler-2] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:24:16.487  INFO 1 --- [    scheduler-3] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:25:16.488  INFO 1 --- [   scheduler-10] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:26:16.488  INFO 1 --- [    scheduler-7] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:27:16.489  INFO 1 --- [    scheduler-8] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:28:16.489  INFO 1 --- [    scheduler-8] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:29:16.489  INFO 1 --- [   scheduler-10] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:30:16.490  INFO 1 --- [    scheduler-4] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:31:16.490  INFO 1 --- [   scheduler-10] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:32:16.491  INFO 1 --- [    scheduler-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:33:16.491  INFO 1 --- [   scheduler-10] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:34:16.492  INFO 1 --- [    scheduler-6] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:35:16.492  INFO 1 --- [    scheduler-7] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:36:16.493  INFO 1 --- [    scheduler-8] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:37:16.493  INFO 1 --- [    scheduler-9] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:38:16.494  INFO 1 --- [    scheduler-3] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:39:16.494  INFO 1 --- [    scheduler-3] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:40:16.494  INFO 1 --- [   scheduler-10] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:41:16.495  INFO 1 --- [    scheduler-6] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:42:16.496  INFO 1 --- [   scheduler-10] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:43:16.496  INFO 1 --- [    scheduler-4] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:44:16.497  INFO 1 --- [    scheduler-3] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:45:16.497  INFO 1 --- [    scheduler-5] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:46:16.498  INFO 1 --- [    scheduler-6] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:47:16.498  INFO 1 --- [    scheduler-4] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:48:16.499  INFO 1 --- [    scheduler-5] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:49:16.499  INFO 1 --- [    scheduler-6] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:50:16.500  INFO 1 --- [    scheduler-4] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:51:16.500  INFO 1 --- [    scheduler-4] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:52:16.501  INFO 1 --- [    scheduler-9] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:53:16.501  INFO 1 --- [    scheduler-8] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:54:16.501  INFO 1 --- [    scheduler-4] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:55:16.502  INFO 1 --- [    scheduler-5] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:56:16.502  INFO 1 --- [    scheduler-7] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:57:16.503  INFO 1 --- [   scheduler-10] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:58:16.503  INFO 1 --- [    scheduler-7] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.

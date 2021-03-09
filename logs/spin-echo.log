@@ -1,0 +1,692 @@
+   ('-.                ('-. .-.              
+ _(  OO)              ( OO )  /              
+(,------.    .-----.  ,--. ,--.  .-'),-----. 
+ |  .---'   '  .--./  |  | |  | ( OO'  .-.  '
+ |  |       |  |('-.  |   .|  | /   |  | |  |
+(|  '--.   /_) |OO  ) |       | \_) |  |\|  |
+ |  .--'   ||  |`-'|  |  .-.  |   \ |  | |  |
+ |  `---. (_'  '--'\  |  | |  |    `'  '-'  '
+ `------'    `-----'  `--' `--'      `-----' 
+2021-03-09 03:05:54.291  INFO 1 --- [           main] com.netflix.spinnaker.echo.Application   : Starting Application on spin-echo-5d55888574-tmd95 with PID 1 (/opt/echo/lib/echo-web-2.15.0-20201009170017.jar started by spinnaker in /)
+2021-03-09 03:05:54.298  INFO 1 --- [           main] com.netflix.spinnaker.echo.Application   : The following profiles are active: composite,local
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.codehaus.groovy.vmplugin.v7.Java7$1 (file:/opt/echo/lib/groovy-2.5.9.jar) to constructor java.lang.invoke.MethodHandles$Lookup(java.lang.Class,int)
+WARNING: Please consider reporting this to the maintainers of org.codehaus.groovy.vmplugin.v7.Java7$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2021-03-09 03:05:59.823  INFO 1 --- [           main] i.g.r.utils.RxJava2OnClasspathCondition  : RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
+2021-03-09 03:05:59.827  INFO 1 --- [           main] i.g.r.utils.ReactorOnClasspathCondition  : Reactor related Aspect extensions are not activated because Reactor is not on the classpath.
+2021-03-09 03:05:59.887  INFO 1 --- [           main] i.g.r.utils.RxJava2OnClasspathCondition  : RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
+2021-03-09 03:05:59.887  INFO 1 --- [           main] i.g.r.utils.ReactorOnClasspathCondition  : Reactor related Aspect extensions are not activated because Reactor is not on the classpath.
+2021-03-09 03:05:59.961  INFO 1 --- [           main] i.g.r.utils.RxJava2OnClasspathCondition  : RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
+2021-03-09 03:05:59.962  INFO 1 --- [           main] i.g.r.utils.ReactorOnClasspathCondition  : Reactor related Aspect extensions are not activated because Reactor is not on the classpath.
+2021-03-09 03:06:00.019  INFO 1 --- [           main] i.g.r.utils.RxJava2OnClasspathCondition  : RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
+2021-03-09 03:06:00.028  INFO 1 --- [           main] i.g.r.utils.ReactorOnClasspathCondition  : Reactor related Aspect extensions are not activated because Reactor is not on the classpath.
+2021-03-09 03:06:00.096  INFO 1 --- [           main] i.g.r.utils.RxJava2OnClasspathCondition  : RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
+2021-03-09 03:06:00.097  INFO 1 --- [           main] i.g.r.utils.ReactorOnClasspathCondition  : Reactor related Aspect extensions are not activated because Reactor is not on the classpath.
+2021-03-09 03:06:01.337  INFO 1 --- [           main] org.pf4j.DefaultPluginManager            : PF4J version 3.2.0 in 'deployment' mode
+2021-03-09 03:06:02.239  WARN 1 --- [           main] c.n.s.config.PluginsAutoConfiguration    : No remote repositories defined, will fallback to looking for a 'repositories.json' file next to the application executable
+2021-03-09 03:06:02.323  INFO 1 --- [           main] org.pf4j.util.FileUtils                  : Expanded plugin zip 'armory-observability-plugin-v1.2.0.zip' in 'armory-observability-plugin-v1.2.0'
+2021-03-09 03:06:02.350  INFO 1 --- [           main] org.pf4j.util.FileUtils                  : Expanded plugin zip 'echo.zip' in 'echo'
+2021-03-09 03:06:02.363  INFO 1 --- [           main] org.pf4j.AbstractPluginManager           : Plugin '/opt/echo/plugins/armory-observability-plugin-v1.2.0/echo' is disabled
+2021-03-09 03:06:02.389  INFO 1 --- [           main] org.pf4j.AbstractPluginManager           : Plugin 'Armory.ObservabilityPlugin@1.2.0' resolved
+2021-03-09 03:06:02.392  INFO 1 --- [           main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'armoryCommonsConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2021-03-09 03:06:02.394  INFO 1 --- [           main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'com.netflix.spinnaker.kork.PlatformComponents' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2021-03-09 03:06:03.782  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'secretsManagerSecretEngine' of type [com.netflix.spinnaker.kork.secrets.engines.SecretsManagerSecretEngine] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:06:03.794  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 's3SecretEngine' of type [com.netflix.spinnaker.kork.secrets.engines.S3SecretEngine] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:06:03.796  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'gcsSecretEngine' of type [com.netflix.spinnaker.kork.secrets.engines.GcsSecretEngine] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:06:03.800  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'noopSecretEngine' of type [com.netflix.spinnaker.kork.secrets.engines.NoopSecretEngine] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:06:03.801  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'secretEngineRegistry' of type [com.netflix.spinnaker.kork.secrets.SecretEngineRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:06:03.802  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'secretManager' of type [com.netflix.spinnaker.kork.secrets.SecretManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:06:04.230  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@70c3483b' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:06:04.314  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:06:05.301  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2021-03-09 03:06:05.358  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-09 03:06:05.366  INFO 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-09 03:06:05.781  INFO 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-09 03:06:05.782  INFO 1 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 10105 ms
+2021-03-09 03:06:09.411  INFO 1 --- [           main] c.n.spinnaker.echo.config.Front50Config  : front50 service loaded
+2021-03-09 03:06:09.460  INFO 1 --- [           main] c.n.s.e.c.PipelineTriggerConfiguration   : Connecting OrcaService to http://spin-orca.spinnaker:8083
+2021-03-09 03:06:09.856  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:06:11.491  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---- ERROR http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:06:11.492  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : java.net.ConnectException: Failed to connect to spin-front50.spinnaker/10.100.69.86:8080
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:265)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:183)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.java:224)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.java:108)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.java:88)
+	at okhttp3.internal.connection.Transmitter.newExchange(Transmitter.java:169)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:41)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:94)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:88)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117)
+	at com.netflix.spinnaker.okhttp.MetricsInterceptor.doIntercept(MetricsInterceptor.java:84)
+	at com.netflix.spinnaker.okhttp.OkHttp3MetricsInterceptor.intercept(OkHttp3MetricsInterceptor.java:33)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:229)
+	at okhttp3.RealCall.execute(RealCall.java:81)
+	at com.jakewharton.retrofit.Ok3Client.execute(Ok3Client.java:41)
+	at retrofit.RestAdapter$RestHandler.invokeRequest(RestAdapter.java:326)
+	at retrofit.RestAdapter$RestHandler.invoke(RestAdapter.java:240)
+	at com.sun.proxy.$Proxy130.getPipelines(Unknown Source)
+	at com.netflix.spinnaker.echo.pipelinetriggers.PipelineCache.lambda$fetchRawPipelines$2(PipelineCache.java:187)
+	at com.netflix.spinnaker.security.AuthenticatedRequest.allowAnonymous(AuthenticatedRequest.java:137)
+	at com.netflix.spinnaker.echo.pipelinetriggers.PipelineCache.fetchRawPipelines(PipelineCache.java:187)
+	at com.netflix.spinnaker.echo.pipelinetriggers.PipelineCache.fetchHydratedPipelines(PipelineCache.java:192)
+	at com.netflix.spinnaker.echo.pipelinetriggers.PipelineCache.pollPipelineConfigs(PipelineCache.java:147)
+	at com.netflix.spinnaker.echo.pipelinetriggers.PipelineCache$1.run(PipelineCache.java:120)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:130)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:263)
+	... 38 more
+
+2021-03-09 03:06:11.500  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---- END ERROR
+2021-03-09 03:06:11.517 ERROR 1 --- [pool-1-thread-1] c.n.s.e.pipelinetriggers.PipelineCache   : Error fetching pipelines from Front50
+
+retrofit.RetrofitError: Failed to connect to spin-front50.spinnaker/10.100.69.86:8080
+	at retrofit.RetrofitError.networkError(RetrofitError.java:27) ~[retrofit-1.9.0.jar:na]
+	at retrofit.RestAdapter$RestHandler.invokeRequest(RestAdapter.java:395) ~[retrofit-1.9.0.jar:na]
+	at retrofit.RestAdapter$RestHandler.invoke(RestAdapter.java:240) ~[retrofit-1.9.0.jar:na]
+	at com.sun.proxy.$Proxy130.getPipelines(Unknown Source) ~[na:na]
+	at com.netflix.spinnaker.echo.pipelinetriggers.PipelineCache.lambda$fetchRawPipelines$2(PipelineCache.java:187) ~[echo-pipelinetriggers-2.15.0-20201009170017.jar:2.15.0-20201009170017]
+	at com.netflix.spinnaker.security.AuthenticatedRequest.allowAnonymous(AuthenticatedRequest.java:137) ~[kork-security-7.78.0.jar:7.78.0]
+	at com.netflix.spinnaker.echo.pipelinetriggers.PipelineCache.fetchRawPipelines(PipelineCache.java:187) ~[echo-pipelinetriggers-2.15.0-20201009170017.jar:2.15.0-20201009170017]
+	at com.netflix.spinnaker.echo.pipelinetriggers.PipelineCache.fetchHydratedPipelines(PipelineCache.java:192) ~[echo-pipelinetriggers-2.15.0-20201009170017.jar:2.15.0-20201009170017]
+	at com.netflix.spinnaker.echo.pipelinetriggers.PipelineCache.pollPipelineConfigs(PipelineCache.java:147) ~[echo-pipelinetriggers-2.15.0-20201009170017.jar:2.15.0-20201009170017]
+	at com.netflix.spinnaker.echo.pipelinetriggers.PipelineCache$1.run(PipelineCache.java:120) ~[echo-pipelinetriggers-2.15.0-20201009170017.jar:2.15.0-20201009170017]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[na:na]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+Caused by: java.net.ConnectException: Failed to connect to spin-front50.spinnaker/10.100.69.86:8080
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:265) ~[okhttp-3.14.7.jar:na]
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:183) ~[okhttp-3.14.7.jar:na]
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.java:224) ~[okhttp-3.14.7.jar:na]
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.java:108) ~[okhttp-3.14.7.jar:na]
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.java:88) ~[okhttp-3.14.7.jar:na]
+	at okhttp3.internal.connection.Transmitter.newExchange(Transmitter.java:169) ~[okhttp-3.14.7.jar:na]
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:41) ~[okhttp-3.14.7.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.7.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117) ~[okhttp-3.14.7.jar:na]
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:94) ~[okhttp-3.14.7.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.7.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117) ~[okhttp-3.14.7.jar:na]
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93) ~[okhttp-3.14.7.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.7.jar:na]
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:88) ~[okhttp-3.14.7.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.7.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117) ~[okhttp-3.14.7.jar:na]
+	at com.netflix.spinnaker.okhttp.MetricsInterceptor.doIntercept(MetricsInterceptor.java:84) ~[kork-web-7.78.0.jar:7.78.0]
+	at com.netflix.spinnaker.okhttp.OkHttp3MetricsInterceptor.intercept(OkHttp3MetricsInterceptor.java:33) ~[kork-web-7.78.0.jar:7.78.0]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.7.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117) ~[okhttp-3.14.7.jar:na]
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:229) ~[okhttp-3.14.7.jar:na]
+	at okhttp3.RealCall.execute(RealCall.java:81) ~[okhttp-3.14.7.jar:na]
+	at com.jakewharton.retrofit.Ok3Client.execute(Ok3Client.java:41) ~[retrofit1-okhttp3-client-1.1.0.jar:na]
+	at retrofit.RestAdapter$RestHandler.invokeRequest(RestAdapter.java:326) ~[retrofit-1.9.0.jar:na]
+	... 14 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.Socket.connect(Unknown Source) ~[na:na]
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:130) ~[okhttp-3.14.7.jar:na]
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:263) ~[okhttp-3.14.7.jar:na]
+	... 38 common frames omitted
+
+2021-03-09 03:06:12.864  INFO 1 --- [           main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-03-09 03:06:12.905  INFO 1 --- [           main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-03-09 03:06:12.905  INFO 1 --- [           main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2021-03-09 03:06:12.908  INFO 1 --- [           main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-03-09 03:06:12.909  INFO 1 --- [           main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-03-09 03:06:12.910  INFO 1 --- [           main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-03-09 03:06:12.910  INFO 1 --- [           main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2021-03-09 03:06:12.910  INFO 1 --- [           main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@593ed55b
+2021-03-09 03:06:13.985  INFO 1 --- [           main] c.n.s.kork.jedis.RedisClientSelector     : Configured primaryDefault using JedisClientDelegate
+2021-03-09 03:06:14.259  INFO 1 --- [           main] c.n.s.echo.config.TelemetryConfig        : Telemetry service loaded
+2021-03-09 03:06:14.524  INFO 1 --- [           main] bConfig$$EnhancerBySpringCGLIB$$86be7d3c : Initializing github service
+2021-03-09 03:06:14.558 ERROR 1 --- [           main] bConfig$$EnhancerBySpringCGLIB$$86be7d3c : Github service is not enabled
+2021-03-09 03:06:14.616  INFO 1 --- [           main] aConfig$$EnhancerBySpringCGLIB$$5871229c : Jira service not enabled, skipping.
+2021-03-09 03:06:15.455  INFO 1 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: d014adfc-2e95-4bcf-bb8b-60bb6b445029
+
+2021-03-09 03:06:15.706  INFO 1 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequest$EndpointRequestMatcher@426e165f, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ed76e4f, org.springframework.security.web.context.SecurityContextPersistenceFilter@2d45050c, org.springframework.security.web.header.HeaderWriterFilter@53a95744, org.springframework.security.web.csrf.CsrfFilter@3fd006e8, org.springframework.security.web.authentication.logout.LogoutFilter@139d7ced, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2177809a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@53010411, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2bbadc1, org.springframework.security.web.session.SessionManagementFilter@799c1c8, org.springframework.security.web.access.ExceptionTranslationFilter@3be23894, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3776a2f2]
+2021-03-09 03:06:15.718  INFO 1 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/spectator/metrics'], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@18fe293d, org.springframework.security.web.context.SecurityContextPersistenceFilter@16c5974d, org.springframework.security.web.header.HeaderWriterFilter@5ab7ef8a, org.springframework.security.web.csrf.CsrfFilter@3d876f9e, org.springframework.security.web.authentication.logout.LogoutFilter@25fb28dd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2b80fadc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@53a1baf5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@73344756, org.springframework.security.web.session.SessionManagementFilter@7c0b71b5, org.springframework.security.web.access.ExceptionTranslationFilter@3cfa429c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7c4164a8]
+2021-03-09 03:06:15.723  INFO 1 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6d340d36, com.netflix.spinnaker.fiat.shared.FiatAuthenticationFilter@6852f1d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5162ccc9, org.springframework.security.web.access.ExceptionTranslationFilter@3cebe931]
+2021-03-09 03:06:18.026  INFO 1 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-03-09 03:06:18.075  INFO 1 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path ''
+2021-03-09 03:06:18.210  INFO 1 --- [           main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-03-09 03:06:18.211  INFO 1 --- [           main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-03-09 03:06:18.249  WARN 1 --- [           main] c.n.s.k.d.NoDiscoveryStatusPublisher     : No service discovery client is available, assuming application is UP
+2021-03-09 03:06:18.251  INFO 1 --- [           main] c.n.s.k.d.DiscoveryStatusListener        : Instance status has changed to UP in service discovery
+2021-03-09 03:06:18.266  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:06:18.279  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8089 (http) with context path ''
+2021-03-09 03:06:18.284  INFO 1 --- [           main] com.netflix.spinnaker.echo.Application   : Started Application in 26.336 seconds (JVM running for 28.011)
+2021-03-09 03:06:24.469  INFO 1 --- [0.0-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-09 03:06:24.470  INFO 1 --- [0.0-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-09 03:06:24.494  INFO 1 --- [0.0-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 24 ms
+2021-03-09 03:06:41.519  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:06:41.574  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"1bee76984adc1e80","id":"1bee76984adc1e80","kind":"CLIENT","name":"GET","timestamp":1615259201543682,"duration":27724,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:06:41.579  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (59ms)
+2021-03-09 03:07:11.587  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:07:11.604  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"aeab1904c3044c0e","id":"aeab1904c3044c0e","kind":"CLIENT","name":"GET","timestamp":1615259231591165,"duration":13112,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:07:11.604  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (17ms)
+2021-03-09 03:07:18.267  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:07:41.607  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:07:41.626  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"a80505411a21d965","id":"a80505411a21d965","kind":"CLIENT","name":"GET","timestamp":1615259261611630,"duration":14507,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:07:41.626  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (19ms)
+2021-03-09 03:08:00.718  INFO 1 --- [eduler_Worker-1] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:08:00.799  INFO 1 --- [eduler_Worker-1] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0.07s
+2021-03-09 03:08:11.628  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:08:11.648  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"cd6b2bd369287b39","id":"cd6b2bd369287b39","kind":"CLIENT","name":"GET","timestamp":1615259291632405,"duration":15727,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:08:11.648  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (19ms)
+2021-03-09 03:08:18.268  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:08:41.650  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:08:41.671  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"a5ce658784231a75","id":"a5ce658784231a75","kind":"CLIENT","name":"GET","timestamp":1615259321654417,"duration":16779,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:08:41.671  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (20ms)
+2021-03-09 03:09:00.694  INFO 1 --- [eduler_Worker-2] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:09:00.695  INFO 1 --- [eduler_Worker-2] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0.001s
+2021-03-09 03:09:11.673  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:09:11.692  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"ee8e7ca03fae6aa8","id":"ee8e7ca03fae6aa8","kind":"CLIENT","name":"GET","timestamp":1615259351677095,"duration":15186,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:09:11.693  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (20ms)
+2021-03-09 03:09:18.268  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:09:41.695  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:09:41.715  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"d5991737626a04ea","id":"d5991737626a04ea","kind":"CLIENT","name":"GET","timestamp":1615259381699344,"duration":15929,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:09:41.716  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (20ms)
+2021-03-09 03:10:00.694  INFO 1 --- [eduler_Worker-3] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:10:00.694  INFO 1 --- [eduler_Worker-3] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0s
+2021-03-09 03:10:11.717  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:10:11.735  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"c97ff26ecbccec36","id":"c97ff26ecbccec36","kind":"CLIENT","name":"GET","timestamp":1615259411721534,"duration":13457,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:10:11.735  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (18ms)
+2021-03-09 03:10:18.268  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:10:41.736  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:10:41.759  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"52d8d854f39d855f","id":"52d8d854f39d855f","kind":"CLIENT","name":"GET","timestamp":1615259441741845,"duration":17272,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:10:41.759  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (22ms)
+2021-03-09 03:11:00.694  INFO 1 --- [eduler_Worker-4] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:11:00.695  INFO 1 --- [eduler_Worker-4] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0.001s
+2021-03-09 03:11:11.761  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:11:11.778  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"a7d0e0c2d67624ad","id":"a7d0e0c2d67624ad","kind":"CLIENT","name":"GET","timestamp":1615259471765548,"duration":12526,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:11:11.778  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (17ms)
+2021-03-09 03:11:18.269  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:11:41.779  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:11:41.799  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"275fa00c145720eb","id":"275fa00c145720eb","kind":"CLIENT","name":"GET","timestamp":1615259501783480,"duration":16387,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:11:41.800  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (20ms)
+2021-03-09 03:12:00.694  INFO 1 --- [eduler_Worker-5] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:12:00.695  INFO 1 --- [eduler_Worker-5] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0.001s
+2021-03-09 03:12:11.801  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:12:11.818  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"618b90e2d7ec2d9c","id":"618b90e2d7ec2d9c","kind":"CLIENT","name":"GET","timestamp":1615259531805838,"duration":12897,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:12:11.819  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (17ms)
+2021-03-09 03:12:18.269  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:12:41.821  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:12:41.838  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"f5b1fb28a58ba4a7","id":"f5b1fb28a58ba4a7","kind":"CLIENT","name":"GET","timestamp":1615259561825600,"duration":12874,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:12:41.839  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (17ms)
+2021-03-09 03:13:00.694  INFO 1 --- [eduler_Worker-6] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:13:00.694  INFO 1 --- [eduler_Worker-6] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0s
+2021-03-09 03:13:11.839  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:13:11.855  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"6dd43c56f0a5e5fb","id":"6dd43c56f0a5e5fb","kind":"CLIENT","name":"GET","timestamp":1615259591843986,"duration":11619,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:13:11.856  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (16ms)
+2021-03-09 03:13:18.270  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:13:41.857  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:13:41.877  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"4f4e43f2385f8c5d","id":"4f4e43f2385f8c5d","kind":"CLIENT","name":"GET","timestamp":1615259621861958,"duration":15453,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:13:41.878  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (19ms)
+2021-03-09 03:14:00.694  INFO 1 --- [eduler_Worker-7] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:14:00.694  INFO 1 --- [eduler_Worker-7] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0s
+2021-03-09 03:14:11.879  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:14:11.895  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"d2497bc0c6ff25b1","id":"d2497bc0c6ff25b1","kind":"CLIENT","name":"GET","timestamp":1615259651883249,"duration":12342,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:14:11.896  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (17ms)
+2021-03-09 03:14:18.270  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:14:41.897  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:14:41.915  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"531b341000792308","id":"531b341000792308","kind":"CLIENT","name":"GET","timestamp":1615259681901512,"duration":13455,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:14:41.915  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (18ms)
+2021-03-09 03:14:47.196  INFO 1 --- [RxIoScheduler-6] c.n.spinnaker.echo.rest.RestService      : ---> HTTP POST https://debug.armory.io/
+2021-03-09 03:14:47.197  INFO 1 --- [RxIoScheduler-5] c.n.spinnaker.echo.rest.RestService      : ---> HTTP POST https://debug.armory.io/
+2021-03-09 03:14:47.197  INFO 1 --- [RxIoScheduler-4] c.n.spinnaker.echo.rest.RestService      : ---> HTTP POST https://debug.armory.io/
+2021-03-09 03:14:47.197  INFO 1 --- [RxIoScheduler-2] c.n.spinnaker.echo.rest.RestService      : ---> HTTP POST https://debug.armory.io/
+2021-03-09 03:14:47.200  INFO 1 --- [RxIoScheduler-3] c.n.spinnaker.echo.rest.RestService      : ---> HTTP POST https://debug.armory.io/
+2021-03-09 03:14:47.609  INFO 1 --- [RxIoScheduler-6] c.n.spinnaker.echo.rest.RestService      : <--- HTTP 200 https://debug.armory.io/ (410ms)
+2021-03-09 03:14:47.623  INFO 1 --- [RxIoScheduler-5] c.n.spinnaker.echo.rest.RestService      : <--- HTTP 200 https://debug.armory.io/ (426ms)
+2021-03-09 03:14:47.624  INFO 1 --- [RxIoScheduler-4] c.n.spinnaker.echo.rest.RestService      : <--- HTTP 200 https://debug.armory.io/ (427ms)
+2021-03-09 03:14:47.625  INFO 1 --- [RxIoScheduler-3] c.n.spinnaker.echo.rest.RestService      : <--- HTTP 200 https://debug.armory.io/ (424ms)
+2021-03-09 03:14:47.644  INFO 1 --- [RxIoScheduler-2] c.n.spinnaker.echo.rest.RestService      : <--- HTTP 200 https://debug.armory.io/ (446ms)
+2021-03-09 03:14:56.388  INFO 1 --- [RxIoScheduler-4] c.n.spinnaker.echo.rest.RestService      : ---> HTTP POST https://debug.armory.io/
+2021-03-09 03:14:56.429  INFO 1 --- [RxIoScheduler-4] c.n.spinnaker.echo.rest.RestService      : <--- HTTP 200 https://debug.armory.io/ (40ms)
+2021-03-09 03:15:00.694  INFO 1 --- [eduler_Worker-8] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:15:00.694  INFO 1 --- [eduler_Worker-8] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0s
+2021-03-09 03:15:11.917  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:15:11.935  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"374c9c24c79071c6","id":"374c9c24c79071c6","kind":"CLIENT","name":"GET","timestamp":1615259711921616,"duration":13877,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:15:11.936  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (18ms)
+2021-03-09 03:15:18.271  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:15:41.937  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:15:41.954  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"ff6ed195ea693057","id":"ff6ed195ea693057","kind":"CLIENT","name":"GET","timestamp":1615259741941882,"duration":12049,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:15:41.954  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (16ms)
+2021-03-09 03:16:00.694  INFO 1 --- [eduler_Worker-9] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:16:00.694  INFO 1 --- [eduler_Worker-9] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0s
+2021-03-09 03:16:11.957  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:16:11.983  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"a073b6e5522fa20d","id":"a073b6e5522fa20d","kind":"CLIENT","name":"GET","timestamp":1615259771961896,"duration":21037,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:16:11.983  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (25ms)
+2021-03-09 03:16:18.271  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:16:41.985  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:16:42.002  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"21ac0d296a0bd4dd","id":"21ac0d296a0bd4dd","kind":"CLIENT","name":"GET","timestamp":1615259801989225,"duration":13478,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:16:42.003  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (18ms)
+2021-03-09 03:17:00.694  INFO 1 --- [duler_Worker-10] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:17:00.695  INFO 1 --- [duler_Worker-10] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0.001s
+2021-03-09 03:17:12.004  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:17:12.020  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"d9e8c19c149a070a","id":"d9e8c19c149a070a","kind":"CLIENT","name":"GET","timestamp":1615259832008810,"duration":11148,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:17:12.021  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (16ms)
+2021-03-09 03:17:18.271  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:17:42.022  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:17:42.041  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"c6b2a95215fe2abd","id":"c6b2a95215fe2abd","kind":"CLIENT","name":"GET","timestamp":1615259862026934,"duration":14915,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:17:42.042  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (19ms)
+2021-03-09 03:18:00.693  INFO 1 --- [eduler_Worker-1] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:18:00.694  INFO 1 --- [eduler_Worker-1] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0.001s
+2021-03-09 03:18:12.043  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:18:12.062  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"9f2cbcbb370a793c","id":"9f2cbcbb370a793c","kind":"CLIENT","name":"GET","timestamp":1615259892048142,"duration":14603,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:18:12.063  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (19ms)
+2021-03-09 03:18:18.272  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:18:42.064  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:18:42.080  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"7c014b522253648a","id":"7c014b522253648a","kind":"CLIENT","name":"GET","timestamp":1615259922068239,"duration":12222,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:18:42.081  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (16ms)
+2021-03-09 03:19:00.694  INFO 1 --- [eduler_Worker-2] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:19:00.694  INFO 1 --- [eduler_Worker-2] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0s
+2021-03-09 03:19:12.082  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:19:12.100  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"a86877cc4158281a","id":"a86877cc4158281a","kind":"CLIENT","name":"GET","timestamp":1615259952086514,"duration":13785,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:19:12.100  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (18ms)
+2021-03-09 03:19:18.272  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:19:42.102  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:19:42.117  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"6b55576907a876ff","id":"6b55576907a876ff","kind":"CLIENT","name":"GET","timestamp":1615259982105973,"duration":11460,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:19:42.117  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (15ms)
+2021-03-09 03:20:00.694  INFO 1 --- [eduler_Worker-3] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:20:00.694  INFO 1 --- [eduler_Worker-3] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0s
+2021-03-09 03:20:12.119  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:20:12.138  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"891a9d5c336e6a1f","id":"891a9d5c336e6a1f","kind":"CLIENT","name":"GET","timestamp":1615260012123393,"duration":14606,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:20:12.138  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (18ms)
+2021-03-09 03:20:18.273  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:20:42.140  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:20:42.160  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"32f84669ebcb77bd","id":"32f84669ebcb77bd","kind":"CLIENT","name":"GET","timestamp":1615260042143935,"duration":16185,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:20:42.160  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (20ms)
+2021-03-09 03:21:00.694  INFO 1 --- [eduler_Worker-4] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:21:00.694  INFO 1 --- [eduler_Worker-4] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0s
+2021-03-09 03:21:12.162  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:21:12.183  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"ebd30aced92831e2","id":"ebd30aced92831e2","kind":"CLIENT","name":"GET","timestamp":1615260072167742,"duration":15415,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:21:12.183  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (20ms)
+2021-03-09 03:21:18.274  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:21:42.185  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:21:42.205  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"79ed34aa5d11716d","id":"79ed34aa5d11716d","kind":"CLIENT","name":"GET","timestamp":1615260102189338,"duration":15845,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:21:42.205  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (20ms)
+2021-03-09 03:22:00.695  INFO 1 --- [eduler_Worker-5] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:22:00.695  INFO 1 --- [eduler_Worker-5] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0s
+2021-03-09 03:22:12.207  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:22:12.227  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"d595857a9dcc6e66","id":"d595857a9dcc6e66","kind":"CLIENT","name":"GET","timestamp":1615260132211466,"duration":15727,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:22:12.227  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (20ms)
+2021-03-09 03:22:18.274  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:22:42.228  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:22:42.247  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"7576f01eade57a39","id":"7576f01eade57a39","kind":"CLIENT","name":"GET","timestamp":1615260162232499,"duration":14791,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:22:42.247  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (18ms)
+2021-03-09 03:23:00.694  INFO 1 --- [eduler_Worker-6] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:23:00.695  INFO 1 --- [eduler_Worker-6] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0.001s
+2021-03-09 03:23:12.248  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:23:12.316  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"923a621921929587","id":"923a621921929587","kind":"CLIENT","name":"GET","timestamp":1615260192252496,"duration":64013,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:23:12.317  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (68ms)
+2021-03-09 03:23:18.274  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:23:42.318  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:23:42.335  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"d8aeafef63d0554f","id":"d8aeafef63d0554f","kind":"CLIENT","name":"GET","timestamp":1615260222322510,"duration":12459,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:23:42.335  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (16ms)
+2021-03-09 03:24:00.694  INFO 1 --- [eduler_Worker-7] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:24:00.694  INFO 1 --- [eduler_Worker-7] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0s
+2021-03-09 03:24:12.336  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:24:12.351  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"5eb4494f028cc537","id":"5eb4494f028cc537","kind":"CLIENT","name":"GET","timestamp":1615260252340587,"duration":11227,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:24:12.352  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (15ms)
+2021-03-09 03:24:18.275  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:24:42.353  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:24:42.370  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"b721a79befec2b53","id":"b721a79befec2b53","kind":"CLIENT","name":"GET","timestamp":1615260282357396,"duration":13334,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:24:42.371  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (17ms)
+2021-03-09 03:25:00.694  INFO 1 --- [eduler_Worker-8] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:25:00.694  INFO 1 --- [eduler_Worker-8] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0s
+2021-03-09 03:25:12.372  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:25:12.388  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"53ba52836f614307","id":"53ba52836f614307","kind":"CLIENT","name":"GET","timestamp":1615260312376897,"duration":11921,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:25:12.390  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (16ms)
+2021-03-09 03:25:18.275  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:25:42.392  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:25:42.414  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"aec2cbe7017e258e","id":"aec2cbe7017e258e","kind":"CLIENT","name":"GET","timestamp":1615260342396324,"duration":17801,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:25:42.416  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (23ms)
+2021-03-09 03:26:00.694  INFO 1 --- [eduler_Worker-9] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:26:00.694  INFO 1 --- [eduler_Worker-9] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0s
+2021-03-09 03:26:12.417  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:26:12.454  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"b0ea80726c454330","id":"b0ea80726c454330","kind":"CLIENT","name":"GET","timestamp":1615260372423960,"duration":30253,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:26:12.454  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (34ms)
+2021-03-09 03:26:18.276  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:26:42.456  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:26:42.472  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"ae3a552a21277d0d","id":"ae3a552a21277d0d","kind":"CLIENT","name":"GET","timestamp":1615260402460878,"duration":11442,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:26:42.472  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (16ms)
+2021-03-09 03:27:00.694  INFO 1 --- [duler_Worker-10] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:27:00.694  INFO 1 --- [duler_Worker-10] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0s
+2021-03-09 03:27:12.473  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:27:12.488  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"9db590c90e0fc4f1","id":"9db590c90e0fc4f1","kind":"CLIENT","name":"GET","timestamp":1615260432477947,"duration":10887,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:27:12.489  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (15ms)
+2021-03-09 03:27:18.276  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:27:42.491  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:27:42.508  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"cf01d1184aeaf351","id":"cf01d1184aeaf351","kind":"CLIENT","name":"GET","timestamp":1615260462494464,"duration":13422,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:27:42.508  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (17ms)
+2021-03-09 03:28:00.694  INFO 1 --- [eduler_Worker-1] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:28:00.695  INFO 1 --- [eduler_Worker-1] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0.001s
+2021-03-09 03:28:12.512  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:28:12.527  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"f6dcb4d78f28fd64","id":"f6dcb4d78f28fd64","kind":"CLIENT","name":"GET","timestamp":1615260492515521,"duration":12354,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:28:12.528  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (16ms)
+2021-03-09 03:28:18.276  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:28:42.529  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:28:42.544  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"f017abe1f54cb9e7","id":"f017abe1f54cb9e7","kind":"CLIENT","name":"GET","timestamp":1615260522534067,"duration":10808,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:28:42.545  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (15ms)
+2021-03-09 03:29:00.694  INFO 1 --- [eduler_Worker-2] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:29:00.695  INFO 1 --- [eduler_Worker-2] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0.001s
+2021-03-09 03:29:12.546  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:29:12.561  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"f55b69d8b0574455","id":"f55b69d8b0574455","kind":"CLIENT","name":"GET","timestamp":1615260552550373,"duration":10832,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:29:12.562  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (16ms)
+2021-03-09 03:29:18.277  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:29:42.563  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:29:42.582  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"b728a50cd8eaa9d1","id":"b728a50cd8eaa9d1","kind":"CLIENT","name":"GET","timestamp":1615260582569184,"duration":13410,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:29:42.583  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (18ms)
+2021-03-09 03:30:00.694  INFO 1 --- [eduler_Worker-3] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:30:00.694  INFO 1 --- [eduler_Worker-3] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0s
+2021-03-09 03:30:12.583  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:30:12.599  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"427bd658eb972b59","id":"427bd658eb972b59","kind":"CLIENT","name":"GET","timestamp":1615260612587912,"duration":11396,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:30:12.599  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (15ms)
+2021-03-09 03:30:18.277  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:30:42.602  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:30:42.617  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"7e59e3afa406a2f3","id":"7e59e3afa406a2f3","kind":"CLIENT","name":"GET","timestamp":1615260642607778,"duration":9459,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:30:42.617  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (14ms)
+2021-03-09 03:31:00.694  INFO 1 --- [eduler_Worker-4] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:31:00.694  INFO 1 --- [eduler_Worker-4] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0s
+2021-03-09 03:31:12.618  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:31:12.635  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"1600b952876cf861","id":"1600b952876cf861","kind":"CLIENT","name":"GET","timestamp":1615260672622972,"duration":12548,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:31:12.636  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (17ms)
+2021-03-09 03:31:18.278  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:31:42.637  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:31:42.652  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"c7b7880330c24106","id":"c7b7880330c24106","kind":"CLIENT","name":"GET","timestamp":1615260702641095,"duration":11591,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:31:42.653  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (15ms)
+2021-03-09 03:32:00.694  INFO 1 --- [eduler_Worker-5] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:32:00.694  INFO 1 --- [eduler_Worker-5] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0s
+2021-03-09 03:32:12.654  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:32:12.669  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"94eaaf61ffd039e8","id":"94eaaf61ffd039e8","kind":"CLIENT","name":"GET","timestamp":1615260732658453,"duration":10579,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:32:12.669  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (14ms)
+2021-03-09 03:32:18.278  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:32:42.672  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:32:42.688  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"a3a1055d4ed228c1","id":"a3a1055d4ed228c1","kind":"CLIENT","name":"GET","timestamp":1615260762678066,"duration":9962,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:32:42.688  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (16ms)
+2021-03-09 03:33:00.694  INFO 1 --- [eduler_Worker-6] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:33:00.694  INFO 1 --- [eduler_Worker-6] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0s
+2021-03-09 03:33:12.690  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:33:12.705  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"01e3c0872c944579","id":"01e3c0872c944579","kind":"CLIENT","name":"GET","timestamp":1615260792694008,"duration":11886,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:33:12.706  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (15ms)
+2021-03-09 03:33:18.278  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:33:42.707  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:33:42.726  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"4d12bc5d418cbf0e","id":"4d12bc5d418cbf0e","kind":"CLIENT","name":"GET","timestamp":1615260822711701,"duration":14594,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:33:42.727  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (19ms)
+2021-03-09 03:34:00.694  INFO 1 --- [eduler_Worker-7] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:34:00.694  INFO 1 --- [eduler_Worker-7] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0s
+2021-03-09 03:34:12.728  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:34:12.748  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"53e2946ec49aad1b","id":"53e2946ec49aad1b","kind":"CLIENT","name":"GET","timestamp":1615260852732698,"duration":15365,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:34:12.748  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (19ms)
+2021-03-09 03:34:18.279  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:34:42.749  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:34:42.765  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"48f777e71b60d0e1","id":"48f777e71b60d0e1","kind":"CLIENT","name":"GET","timestamp":1615260882753744,"duration":11572,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:34:42.765  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (15ms)
+2021-03-09 03:35:00.694  INFO 1 --- [eduler_Worker-8] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:35:00.694  INFO 1 --- [eduler_Worker-8] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0s
+2021-03-09 03:35:12.766  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:35:12.784  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"365f17206c824dee","id":"365f17206c824dee","kind":"CLIENT","name":"GET","timestamp":1615260912770722,"duration":13521,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:35:12.785  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (18ms)
+2021-03-09 03:35:18.279  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:35:42.786  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:35:42.802  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"a27a4a73df7d039e","id":"a27a4a73df7d039e","kind":"CLIENT","name":"GET","timestamp":1615260942790060,"duration":12523,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:35:42.803  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (16ms)
+2021-03-09 03:36:00.693  INFO 1 --- [eduler_Worker-9] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:36:00.694  INFO 1 --- [eduler_Worker-9] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0.001s
+2021-03-09 03:36:12.804  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:36:12.819  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"6bbd1ea1f5fe5123","id":"6bbd1ea1f5fe5123","kind":"CLIENT","name":"GET","timestamp":1615260972807559,"duration":11332,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:36:12.819  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (15ms)
+2021-03-09 03:36:18.280  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:36:42.821  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:36:42.833  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"f4d1b6ed596b90e3","id":"f4d1b6ed596b90e3","kind":"CLIENT","name":"GET","timestamp":1615261002821654,"duration":11430,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:36:42.833  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (12ms)
+2021-03-09 03:37:00.694  INFO 1 --- [duler_Worker-10] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:37:00.695  INFO 1 --- [duler_Worker-10] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0.001s
+2021-03-09 03:37:12.835  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:37:12.851  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"2b48742920d3d555","id":"2b48742920d3d555","kind":"CLIENT","name":"GET","timestamp":1615261032839629,"duration":12130,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:37:12.852  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (16ms)
+2021-03-09 03:37:18.280  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:37:42.854  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:37:42.872  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"db65b0af601ad43e","id":"db65b0af601ad43e","kind":"CLIENT","name":"GET","timestamp":1615261062857925,"duration":14296,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:37:42.872  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (18ms)
+2021-03-09 03:38:00.694  INFO 1 --- [eduler_Worker-1] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:38:00.695  INFO 1 --- [eduler_Worker-1] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0.001s
+2021-03-09 03:38:12.875  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:38:12.894  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"aadd24e880204d42","id":"aadd24e880204d42","kind":"CLIENT","name":"GET","timestamp":1615261092879404,"duration":14678,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:38:12.894  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (18ms)
+2021-03-09 03:38:18.280  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:38:42.896  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:38:42.909  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"6ae5f6f54ffea905","id":"6ae5f6f54ffea905","kind":"CLIENT","name":"GET","timestamp":1615261122899801,"duration":9751,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:38:42.910  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (13ms)
+2021-03-09 03:39:00.694  INFO 1 --- [eduler_Worker-2] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:39:00.695  INFO 1 --- [eduler_Worker-2] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0.001s
+2021-03-09 03:39:12.910  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:39:12.925  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"031f3c5ff4ccab85","id":"031f3c5ff4ccab85","kind":"CLIENT","name":"GET","timestamp":1615261152914934,"duration":10569,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:39:12.926  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (14ms)
+2021-03-09 03:39:18.281  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:39:42.926  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:39:42.941  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"dfb3bbb45b85cc69","id":"dfb3bbb45b85cc69","kind":"CLIENT","name":"GET","timestamp":1615261182931292,"duration":9781,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:39:42.941  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (14ms)
+2021-03-09 03:40:00.694  INFO 1 --- [eduler_Worker-3] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:40:00.695  INFO 1 --- [eduler_Worker-3] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0.001s
+2021-03-09 03:40:12.942  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:40:12.958  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"743019a81ac9f94c","id":"743019a81ac9f94c","kind":"CLIENT","name":"GET","timestamp":1615261212948181,"duration":10016,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:40:12.958  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (15ms)
+2021-03-09 03:40:18.281  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:40:42.961  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:40:42.975  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"6561d26ea464e8ed","id":"6561d26ea464e8ed","kind":"CLIENT","name":"GET","timestamp":1615261242965028,"duration":9954,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:40:42.975  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (14ms)
+2021-03-09 03:41:00.694  INFO 1 --- [eduler_Worker-4] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:41:00.695  INFO 1 --- [eduler_Worker-4] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0s
+2021-03-09 03:41:12.976  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:41:12.991  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"57a0b698bffd2ae5","id":"57a0b698bffd2ae5","kind":"CLIENT","name":"GET","timestamp":1615261272980782,"duration":10996,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:41:12.992  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (15ms)
+2021-03-09 03:41:18.282  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:41:42.994  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:41:43.007  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"9be6eff1cc0aeee4","id":"9be6eff1cc0aeee4","kind":"CLIENT","name":"GET","timestamp":1615261302997400,"duration":9844,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:41:43.007  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (13ms)
+2021-03-09 03:42:00.694  INFO 1 --- [eduler_Worker-5] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:42:00.694  INFO 1 --- [eduler_Worker-5] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0s
+2021-03-09 03:42:13.008  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:42:13.023  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"fee1c8d37f43aec9","id":"fee1c8d37f43aec9","kind":"CLIENT","name":"GET","timestamp":1615261333012660,"duration":10452,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:42:13.023  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (14ms)
+2021-03-09 03:42:18.282  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:42:43.024  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:42:43.041  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"7e9588868aee08ff","id":"7e9588868aee08ff","kind":"CLIENT","name":"GET","timestamp":1615261363028495,"duration":12894,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:42:43.041  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (16ms)
+2021-03-09 03:43:00.694  INFO 1 --- [eduler_Worker-6] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:43:00.695  INFO 1 --- [eduler_Worker-6] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0.001s
+2021-03-09 03:43:13.043  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:43:13.058  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"497da266a7830cd4","id":"497da266a7830cd4","kind":"CLIENT","name":"GET","timestamp":1615261393046745,"duration":11933,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:43:13.059  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (16ms)
+2021-03-09 03:43:18.282  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:43:43.060  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:43:43.075  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"4113bda8a6f768cb","id":"4113bda8a6f768cb","kind":"CLIENT","name":"GET","timestamp":1615261423063958,"duration":11249,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:43:43.075  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (14ms)
+2021-03-09 03:44:00.694  INFO 1 --- [eduler_Worker-7] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:44:00.694  INFO 1 --- [eduler_Worker-7] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0s
+2021-03-09 03:44:13.076  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:44:13.095  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"0371bb6d7d3118e7","id":"0371bb6d7d3118e7","kind":"CLIENT","name":"GET","timestamp":1615261453081151,"duration":14489,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:44:13.096  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (19ms)
+2021-03-09 03:44:18.283  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:44:43.101  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:44:43.115  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"62c1cb21d0eaa944","id":"62c1cb21d0eaa944","kind":"CLIENT","name":"GET","timestamp":1615261483104776,"duration":10238,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:44:43.115  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (14ms)
+2021-03-09 03:45:00.694  INFO 1 --- [eduler_Worker-8] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:45:00.694  INFO 1 --- [eduler_Worker-8] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0s
+2021-03-09 03:45:13.118  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:45:13.132  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"3e3c89ec59fb82d1","id":"3e3c89ec59fb82d1","kind":"CLIENT","name":"GET","timestamp":1615261513122186,"duration":10123,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:45:13.132  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (14ms)
+2021-03-09 03:45:18.283  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:45:43.133  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:45:43.152  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"e2f74d5334f05b22","id":"e2f74d5334f05b22","kind":"CLIENT","name":"GET","timestamp":1615261543137970,"duration":13979,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:45:43.152  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (18ms)
+2021-03-09 03:46:00.694  INFO 1 --- [eduler_Worker-9] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:46:00.694  INFO 1 --- [eduler_Worker-9] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0s
+2021-03-09 03:46:13.153  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:46:13.168  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"c603ee08b3933c99","id":"c603ee08b3933c99","kind":"CLIENT","name":"GET","timestamp":1615261573156984,"duration":11221,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:46:13.168  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (15ms)
+2021-03-09 03:46:18.284  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:46:35.193  INFO 1 --- [RxIoScheduler-7] c.n.spinnaker.echo.rest.RestService      : ---> HTTP POST https://debug.armory.io/
+2021-03-09 03:46:35.198  INFO 1 --- [RxIoScheduler-8] c.n.spinnaker.echo.rest.RestService      : ---> HTTP POST https://debug.armory.io/
+2021-03-09 03:46:35.200  INFO 1 --- [RxIoScheduler-9] c.n.spinnaker.echo.rest.RestService      : ---> HTTP POST https://debug.armory.io/
+2021-03-09 03:46:35.222  INFO 1 --- [xIoScheduler-11] c.n.spinnaker.echo.rest.RestService      : ---> HTTP POST https://debug.armory.io/
+2021-03-09 03:46:35.223  INFO 1 --- [xIoScheduler-10] c.n.spinnaker.echo.rest.RestService      : ---> HTTP POST https://debug.armory.io/
+2021-03-09 03:46:35.364  INFO 1 --- [RxIoScheduler-8] c.n.spinnaker.echo.rest.RestService      : <--- HTTP 200 https://debug.armory.io/ (165ms)
+2021-03-09 03:46:35.388  INFO 1 --- [xIoScheduler-10] c.n.spinnaker.echo.rest.RestService      : <--- HTTP 200 https://debug.armory.io/ (165ms)
+2021-03-09 03:46:35.390  INFO 1 --- [RxIoScheduler-7] c.n.spinnaker.echo.rest.RestService      : <--- HTTP 200 https://debug.armory.io/ (192ms)
+2021-03-09 03:46:35.402  INFO 1 --- [RxIoScheduler-9] c.n.spinnaker.echo.rest.RestService      : <--- HTTP 200 https://debug.armory.io/ (201ms)
+2021-03-09 03:46:35.405  INFO 1 --- [xIoScheduler-11] c.n.spinnaker.echo.rest.RestService      : <--- HTTP 200 https://debug.armory.io/ (182ms)
+2021-03-09 03:46:43.169  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:46:43.182  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"d23e55246b0411f3","id":"d23e55246b0411f3","kind":"CLIENT","name":"GET","timestamp":1615261603172462,"duration":10293,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:46:43.183  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (13ms)
+2021-03-09 03:47:00.693  INFO 1 --- [duler_Worker-10] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:47:00.694  INFO 1 --- [duler_Worker-10] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0.001s
+2021-03-09 03:47:13.183  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:47:13.198  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"d4b5ea43d304d1cd","id":"d4b5ea43d304d1cd","kind":"CLIENT","name":"GET","timestamp":1615261633187862,"duration":10202,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:47:13.198  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (14ms)
+2021-03-09 03:47:18.284  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:47:43.199  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:47:43.214  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"7cce8e449c3767d0","id":"7cce8e449c3767d0","kind":"CLIENT","name":"GET","timestamp":1615261663203191,"duration":11072,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:47:43.214  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (15ms)
+2021-03-09 03:47:56.629  INFO 1 --- [RxIoScheduler-8] c.n.spinnaker.echo.rest.RestService      : ---> HTTP POST https://debug.armory.io/
+2021-03-09 03:47:56.670  INFO 1 --- [RxIoScheduler-8] c.n.spinnaker.echo.rest.RestService      : <--- HTTP 200 https://debug.armory.io/ (41ms)
+2021-03-09 03:48:00.694  INFO 1 --- [eduler_Worker-1] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:48:00.695  INFO 1 --- [eduler_Worker-1] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0.001s
+2021-03-09 03:48:13.216  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:48:13.229  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"75d7d6c9f7c90dc7","id":"75d7d6c9f7c90dc7","kind":"CLIENT","name":"GET","timestamp":1615261693220272,"duration":9415,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:48:13.230  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (13ms)
+2021-03-09 03:48:18.284  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:48:43.231  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:48:43.245  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"055485817609fdff","id":"055485817609fdff","kind":"CLIENT","name":"GET","timestamp":1615261723234905,"duration":10802,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:48:43.246  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (14ms)
+2021-03-09 03:49:00.694  INFO 1 --- [eduler_Worker-2] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:49:00.694  INFO 1 --- [eduler_Worker-2] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0s
+2021-03-09 03:49:13.246  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:49:13.264  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"b02368f494538e4e","id":"b02368f494538e4e","kind":"CLIENT","name":"GET","timestamp":1615261753250890,"duration":13399,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:49:13.264  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (17ms)
+2021-03-09 03:49:18.285  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:49:43.266  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:49:43.286  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"3af59d6aca33d7c0","id":"3af59d6aca33d7c0","kind":"CLIENT","name":"GET","timestamp":1615261783271468,"duration":14822,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:49:43.286  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (19ms)
+2021-03-09 03:50:00.696  INFO 1 --- [eduler_Worker-3] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:50:00.696  INFO 1 --- [eduler_Worker-3] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0s
+2021-03-09 03:50:13.287  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:50:13.305  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"7bad5afb378fc900","id":"7bad5afb378fc900","kind":"CLIENT","name":"GET","timestamp":1615261813291850,"duration":13313,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:50:13.305  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (18ms)
+2021-03-09 03:50:18.285  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:50:43.306  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:50:43.321  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"45747f276fbbe891","id":"45747f276fbbe891","kind":"CLIENT","name":"GET","timestamp":1615261843310669,"duration":10927,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:50:43.322  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (15ms)
+2021-03-09 03:51:00.693  INFO 1 --- [eduler_Worker-4] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:51:00.694  INFO 1 --- [eduler_Worker-4] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0.001s
+2021-03-09 03:51:13.323  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:51:13.337  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"4ac04add11c44e71","id":"4ac04add11c44e71","kind":"CLIENT","name":"GET","timestamp":1615261873326940,"duration":10645,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:51:13.338  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (14ms)
+2021-03-09 03:51:18.286  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:51:43.339  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:51:43.352  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"99ab3883d6bea859","id":"99ab3883d6bea859","kind":"CLIENT","name":"GET","timestamp":1615261903343544,"duration":9318,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:51:43.353  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (13ms)
+2021-03-09 03:52:00.694  INFO 1 --- [eduler_Worker-5] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:52:00.695  INFO 1 --- [eduler_Worker-5] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0.001s
+2021-03-09 03:52:13.355  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:52:13.374  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"d93eebf3ff258735","id":"d93eebf3ff258735","kind":"CLIENT","name":"GET","timestamp":1615261933358714,"duration":15788,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:52:13.375  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (19ms)
+2021-03-09 03:52:18.286  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:52:43.376  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:52:43.389  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"ace4c666f40ae26a","id":"ace4c666f40ae26a","kind":"CLIENT","name":"GET","timestamp":1615261963380350,"duration":9312,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:52:43.390  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (13ms)
+2021-03-09 03:53:00.694  INFO 1 --- [eduler_Worker-6] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:53:00.694  INFO 1 --- [eduler_Worker-6] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0s
+2021-03-09 03:53:13.391  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:53:13.408  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"40a5367486e7e483","id":"40a5367486e7e483","kind":"CLIENT","name":"GET","timestamp":1615261993395051,"duration":13829,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:53:13.409  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (17ms)
+2021-03-09 03:53:18.286  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:53:43.410  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:53:43.423  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"a9c3283b43c33a93","id":"a9c3283b43c33a93","kind":"CLIENT","name":"GET","timestamp":1615262023414381,"duration":9479,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:53:43.424  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (13ms)
+2021-03-09 03:54:00.694  INFO 1 --- [eduler_Worker-7] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:54:00.694  INFO 1 --- [eduler_Worker-7] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0s
+2021-03-09 03:54:13.425  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:54:13.449  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"7d0eeeebf98cbb6f","id":"7d0eeeebf98cbb6f","kind":"CLIENT","name":"GET","timestamp":1615262053429620,"duration":19538,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:54:13.449  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (23ms)
+2021-03-09 03:54:18.287  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:54:43.450  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:54:43.464  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"5943360c66a1e9d2","id":"5943360c66a1e9d2","kind":"CLIENT","name":"GET","timestamp":1615262083454297,"duration":10276,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:54:43.464  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (14ms)
+2021-03-09 03:55:00.693  INFO 1 --- [eduler_Worker-8] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:55:00.694  INFO 1 --- [eduler_Worker-8] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0.001s
+2021-03-09 03:55:13.465  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:55:13.487  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"583b52c036b088b5","id":"583b52c036b088b5","kind":"CLIENT","name":"GET","timestamp":1615262113469754,"duration":17580,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:55:13.488  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (22ms)
+2021-03-09 03:55:18.287  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:55:43.489  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:55:43.504  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"368f5e382ebad887","id":"368f5e382ebad887","kind":"CLIENT","name":"GET","timestamp":1615262143493589,"duration":10918,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:55:43.505  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (16ms)
+2021-03-09 03:56:00.694  INFO 1 --- [eduler_Worker-9] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:56:00.695  INFO 1 --- [eduler_Worker-9] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0.001s
+2021-03-09 03:56:13.507  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:56:13.525  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"355c911e5232c150","id":"355c911e5232c150","kind":"CLIENT","name":"GET","timestamp":1615262173511384,"duration":13765,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:56:13.525  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (18ms)
+2021-03-09 03:56:18.288  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:56:43.526  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:56:43.539  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"7eaf7db01e3b10df","id":"7eaf7db01e3b10df","kind":"CLIENT","name":"GET","timestamp":1615262203530686,"duration":9014,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:56:43.540  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (13ms)
+2021-03-09 03:57:00.694  INFO 1 --- [duler_Worker-10] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:57:00.694  INFO 1 --- [duler_Worker-10] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0s
+2021-03-09 03:57:13.541  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:57:13.555  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"9d04ce7690ea37e4","id":"9d04ce7690ea37e4","kind":"CLIENT","name":"GET","timestamp":1615262233545354,"duration":9805,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:57:13.555  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (14ms)
+2021-03-09 03:57:18.288  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:57:43.556  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:57:43.573  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"1ee5841f0888ac99","id":"1ee5841f0888ac99","kind":"CLIENT","name":"GET","timestamp":1615262263560506,"duration":12476,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:57:43.573  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (16ms)
+2021-03-09 03:58:00.694  INFO 1 --- [eduler_Worker-1] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Running the pipeline configs polling agent...
+2021-03-09 03:58:00.694  INFO 1 --- [eduler_Worker-1] c.n.s.e.s.a.p.PipelineConfigsPollingJob  : Done polling for pipeline configs in 0s
+2021-03-09 03:58:13.574  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:58:13.593  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"95bd435bd34ab438","id":"95bd435bd34ab438","kind":"CLIENT","name":"GET","timestamp":1615262293579160,"duration":14691,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:58:13.594  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (20ms)
+2021-03-09 03:58:18.288  INFO 1 --- [   scheduling-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2021-03-09 03:58:43.595  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : ---> HTTP GET http://spin-front50.spinnaker:8080/pipelines?restricted=false
+2021-03-09 03:58:43.609  INFO 1 --- [pool-1-thread-1] brave.Tracer                             : {"traceId":"6eb6a16395b67bac","id":"6eb6a16395b67bac","kind":"CLIENT","name":"GET","timestamp":1615262323599537,"duration":9850,"localEndpoint":{"serviceName":"unknown"},"tags":{"http.method":"GET","http.path":"/pipelines"}}
+2021-03-09 03:58:43.609  INFO 1 --- [pool-1-thread-1] c.n.s.echo.services.Front50Service       : <--- HTTP 200 http://spin-front50.spinnaker:8080/pipelines?restricted=false (13ms)

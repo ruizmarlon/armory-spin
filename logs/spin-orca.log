@@ -1,0 +1,288 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.codehaus.groovy.vmplugin.v7.Java7$1 (file:/opt/orca/lib/groovy-2.5.9.jar) to constructor java.lang.invoke.MethodHandles$Lookup(java.lang.Class,int)
+WARNING: Please consider reporting this to the maintainers of org.codehaus.groovy.vmplugin.v7.Java7$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+    ~                           ~              ~
+       ~~~~     ~          ~~ ~        ~      ~    ~~
+  ~~             _,-''-.     ~~        .-._       ~  ~~~
+            ,---':::::::\`.            \_::`.,...__    ~
+     ~     |::`.:::::::::::`.       ~    )::::::.--'
+           |:_:::`.::::::::::`-.__~____,'::::(
+ ~~~~       \```-:::`-.o:::::::::\:::::::::~::\       ~~~
+             )` `` `.::::::::::::|:~~:::::::::|      ~   ~~
+ ~~        ,',' ` `` \::::::::,-/:_:::::::~~:/
+         ,','/` ,' ` `\::::::|,'   `::~~::::/  ~~        ~
+~       ( (  \_ __,.-' \:-:,-'.__.-':::::::'  ~    ~
+    ~    \`---''   __..--' `:::~::::::_:-'
+          `------''      ~~  \::~~:::'
+       ~~   `--..__  ~   ~   |::_:-'                    ~~~
+   ~ ~~     /:,'   `''---.,--':::\          ~~       ~~
+  ~         ``           (:::::::|  ~~~            ~~    ~
+~~      ~~             ~  \:~~~:::             ~       ~~~
+             ~     ~~~     \:::~::          ~~~     ~
+    ~~           ~~    ~~~  ::::::                     ~~
+          ~~~                \::::   ~~
+                       ~   ~~ `--'
+
+2021-03-09 03:05:22.933  INFO 1 --- [           main] com.netflix.spinnaker.orca.Main          : [] Starting Main on spin-orca-d44d6989-4mbsm with PID 1 (/opt/orca/lib/orca-web-2.17.2-20210127223623.jar started by spinnaker in /)
+2021-03-09 03:05:22.937  INFO 1 --- [           main] com.netflix.spinnaker.orca.Main          : [] The following profiles are active: local
+2021-03-09 03:05:26.017  INFO 1 --- [           main] i.g.r.utils.RxJava2OnClasspathCondition  : [] RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
+2021-03-09 03:05:26.018  INFO 1 --- [           main] i.g.r.utils.ReactorOnClasspathCondition  : [] Reactor related Aspect extensions are not activated because Reactor is not on the classpath.
+2021-03-09 03:05:26.050  INFO 1 --- [           main] i.g.r.utils.RxJava2OnClasspathCondition  : [] RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
+2021-03-09 03:05:26.051  INFO 1 --- [           main] i.g.r.utils.ReactorOnClasspathCondition  : [] Reactor related Aspect extensions are not activated because Reactor is not on the classpath.
+2021-03-09 03:05:26.077  INFO 1 --- [           main] i.g.r.utils.RxJava2OnClasspathCondition  : [] RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
+2021-03-09 03:05:26.078  INFO 1 --- [           main] i.g.r.utils.ReactorOnClasspathCondition  : [] Reactor related Aspect extensions are not activated because Reactor is not on the classpath.
+2021-03-09 03:05:26.097  INFO 1 --- [           main] i.g.r.utils.RxJava2OnClasspathCondition  : [] RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
+2021-03-09 03:05:26.097  INFO 1 --- [           main] i.g.r.utils.ReactorOnClasspathCondition  : [] Reactor related Aspect extensions are not activated because Reactor is not on the classpath.
+2021-03-09 03:05:26.113  INFO 1 --- [           main] i.g.r.utils.RxJava2OnClasspathCondition  : [] RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
+2021-03-09 03:05:26.113  INFO 1 --- [           main] i.g.r.utils.ReactorOnClasspathCondition  : [] Reactor related Aspect extensions are not activated because Reactor is not on the classpath.
+2021-03-09 03:05:26.685  INFO 1 --- [           main] org.pf4j.DefaultPluginManager            : [] PF4J version 3.2.0 in 'deployment' mode
+2021-03-09 03:05:27.075  WARN 1 --- [           main] c.n.s.config.PluginsAutoConfiguration    : [] No remote repositories defined, will fallback to looking for a 'repositories.json' file next to the application executable
+2021-03-09 03:05:27.112  INFO 1 --- [           main] org.pf4j.util.FileUtils                  : [] Expanded plugin zip 'armory-observability-plugin-v1.2.0.zip' in 'armory-observability-plugin-v1.2.0'
+2021-03-09 03:05:27.116  INFO 1 --- [           main] org.pf4j.util.FileUtils                  : [] Expanded plugin zip 'orca.zip' in 'orca'
+2021-03-09 03:05:27.122  INFO 1 --- [           main] org.pf4j.AbstractPluginManager           : [] Plugin '/opt/orca/plugins/armory-observability-plugin-v1.2.0/orca' is disabled
+2021-03-09 03:05:27.230  INFO 1 --- [           main] org.pf4j.AbstractPluginManager           : [] Plugin 'Armory.ObservabilityPlugin@1.2.0' resolved
+2021-03-09 03:05:27.232  INFO 1 --- [           main] o.s.c.a.ConfigurationClassPostProcessor  : [] Cannot enhance @Configuration bean definition 'armoryCommonsConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2021-03-09 03:05:27.234  INFO 1 --- [           main] o.s.c.a.ConfigurationClassPostProcessor  : [] Cannot enhance @Configuration bean definition 'com.netflix.spinnaker.kork.PlatformComponents' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2021-03-09 03:05:28.002  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : [] Bean 'secretsManagerSecretEngine' of type [com.netflix.spinnaker.kork.secrets.engines.SecretsManagerSecretEngine] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:05:28.008  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : [] Bean 's3SecretEngine' of type [com.netflix.spinnaker.kork.secrets.engines.S3SecretEngine] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:05:28.010  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : [] Bean 'gcsSecretEngine' of type [com.netflix.spinnaker.kork.secrets.engines.GcsSecretEngine] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:05:28.010  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : [] Bean 'noopSecretEngine' of type [com.netflix.spinnaker.kork.secrets.engines.NoopSecretEngine] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:05:28.011  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : [] Bean 'secretEngineRegistry' of type [com.netflix.spinnaker.kork.secrets.SecretEngineRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:05:28.011  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : [] Bean 'secretManager' of type [com.netflix.spinnaker.kork.secrets.SecretManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:05:28.279  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : [] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@76656a25' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:05:28.315  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : [] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:05:28.333  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : [] Bean 'com.netflix.spinnaker.kork.metrics.SpectatorConfiguration' of type [com.netflix.spinnaker.kork.metrics.SpectatorConfiguration$$EnhancerBySpringCGLIB$$49beb181] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:05:28.342  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : [] Bean 'org.springframework.boot.actuate.autoconfigure.metrics.export.simple.SimpleMetricsExportAutoConfiguration' of type [org.springframework.boot.actuate.autoconfigure.metrics.export.simple.SimpleMetricsExportAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:05:28.370  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : [] Bean 'management.metrics.export.simple-org.springframework.boot.actuate.autoconfigure.metrics.export.simple.SimpleProperties' of type [org.springframework.boot.actuate.autoconfigure.metrics.export.simple.SimpleProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:05:28.380  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : [] Bean 'simpleConfig' of type [org.springframework.boot.actuate.autoconfigure.metrics.export.simple.SimplePropertiesConfigAdapter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:05:28.394  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : [] Bean 'org.springframework.boot.actuate.autoconfigure.metrics.MetricsAutoConfiguration' of type [org.springframework.boot.actuate.autoconfigure.metrics.MetricsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:05:28.397  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : [] Bean 'micrometerClock' of type [io.micrometer.core.instrument.Clock$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:05:28.411  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : [] Bean 'simpleMeterRegistry' of type [io.micrometer.core.instrument.simple.SimpleMeterRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:05:28.436  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : [] Bean 'registry' of type [com.netflix.spectator.micrometer.MicrometerRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 03:05:28.531  INFO 1 --- [           main] c.n.s.o.t.ThreadPoolMetricsPostProcessor : [] Applying metrics to class org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor applicationEventTaskExecutor
+2021-03-09 03:05:28.562  INFO 1 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : [] Initializing ExecutorService 'applicationEventTaskExecutor'
+2021-03-09 03:05:29.048  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : [] Tomcat initialized with port(s): 8083 (http)
+2021-03-09 03:05:29.061  INFO 1 --- [           main] o.a.coyote.http11.Http11NioProtocol      : [] Initializing ProtocolHandler ["http-nio-0.0.0.0-8083"]
+2021-03-09 03:05:29.062  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : [] Starting service [Tomcat]
+2021-03-09 03:05:29.062  INFO 1 --- [           main] org.apache.catalina.core.StandardEngine  : [] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-09 03:05:29.250  INFO 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : [] Initializing Spring embedded WebApplicationContext
+2021-03-09 03:05:29.250  INFO 1 --- [           main] o.s.web.context.ContextLoader            : [] Root WebApplicationContext: initialization completed in 6208 ms
+2021-03-09 03:05:30.865  INFO 1 --- [           main] c.n.s.kork.jedis.RedisClientSelector     : [] Configured primaryDefault using JedisClientDelegate
+2021-03-09 03:05:30.883  INFO 1 --- [           main] c.n.s.o.t.ThreadPoolMetricsPostProcessor : [] Applying metrics to class org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor QueryAll
+2021-03-09 03:05:30.884  INFO 1 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : [] Initializing ExecutorService 'QueryAll'
+2021-03-09 03:05:30.903  INFO 1 --- [           main] c.n.s.o.t.ThreadPoolMetricsPostProcessor : [] Applying metrics to class org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor QueryByApp
+2021-03-09 03:05:30.905  INFO 1 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : [] Initializing ExecutorService 'QueryByApp'
+2021-03-09 03:05:32.004  INFO 1 --- [           main] c.n.s.o.c.c.CloudDriverConfiguration     : [] readonly URL not configured for clouddriver, using writeable clouddriver http://spin-clouddriver.spinnaker:7002 for CloudDriverTaskStatusService
+2021-03-09 03:05:32.045  INFO 1 --- [           main] c.n.s.o.c.c.CloudDriverConfiguration     : [] readonly URL not configured for clouddriver, using writeable clouddriver http://spin-clouddriver.spinnaker:7002 for OortService
+2021-03-09 03:05:32.401  INFO 1 --- [           main] c.n.s.o.c.c.CloudDriverConfiguration     : [] readonly URL not configured for clouddriver, using writeable clouddriver http://spin-clouddriver.spinnaker:7002 for MortService
+2021-03-09 03:05:32.581  INFO 1 --- [           main] c.n.s.o.c.c.CloudDriverConfiguration     : [] readonly URL not configured for clouddriver, using writeable clouddriver http://spin-clouddriver.spinnaker:7002 for CloudDriverCacheStatusService
+2021-03-09 03:05:34.356  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: invalidExecutionId
+2021-03-09 03:05:34.357  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: completeTask
+2021-03-09 03:05:34.360  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: pauseStage
+2021-03-09 03:05:34.360  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: startStage
+2021-03-09 03:05:34.361  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: noDownstreamTasks
+2021-03-09 03:05:34.361  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: completeExecution
+2021-03-09 03:05:34.362  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: startExecution
+2021-03-09 03:05:34.363  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: invalidTaskId
+2021-03-09 03:05:34.363  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: invalidTaskType
+2021-03-09 03:05:34.364  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: continueParentStage
+2021-03-09 03:05:34.366  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: resumeExecution
+2021-03-09 03:05:34.367  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: resumeStage
+2021-03-09 03:05:34.367  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: pauseTask
+2021-03-09 03:05:34.368  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: restartStage
+2021-03-09 03:05:34.368  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: runTask
+2021-03-09 03:05:34.369  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: skipStage
+2021-03-09 03:05:34.370  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: resumeTask
+2021-03-09 03:05:34.370  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: cancelExecution
+2021-03-09 03:05:34.371  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: startTask
+2021-03-09 03:05:34.372  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: rescheduleExecution
+2021-03-09 03:05:34.373  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: invalidStageId
+2021-03-09 03:05:34.373  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: completeStage
+2021-03-09 03:05:34.374  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: abortStage
+2021-03-09 03:05:34.375  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: startWaitingExecutions
+2021-03-09 03:05:34.375  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: cancelStage
+2021-03-09 03:05:34.398  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Attribute: attempts
+2021-03-09 03:05:34.399  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Attribute: ackAttempts
+2021-03-09 03:05:34.399  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Attribute: maxAttempts
+2021-03-09 03:05:34.446  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Attribute: deadMessage
+2021-03-09 03:05:34.446  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Attribute: totalThrottleTime
+2021-03-09 03:05:34.825  INFO 1 --- [           main] c.n.s.o.t.ThreadPoolMetricsPostProcessor : [] Applying metrics to class org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor messageHandlerPool
+2021-03-09 03:05:34.827  INFO 1 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : [] Initializing ExecutorService 'messageHandlerPool'
+2021-03-09 03:05:34.880  INFO 1 --- [           main] c.n.s.o.t.RedisPoolMetricsPostProcessor  : [] Applying metrics to class redis.clients.jedis.JedisPool queueRedisPool
+2021-03-09 03:05:34.946  INFO 1 --- [           main] c.netflix.spinnaker.q.redis.RedisQueue   : [] Configured class com.netflix.spinnaker.q.redis.RedisQueue queue: orca.task.queue
+2021-03-09 03:05:35.796  INFO 1 --- [           main] c.n.s.o.t.ThreadPoolMetricsPostProcessor : [] Applying metrics to class org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor cancellableStageExecutor
+2021-03-09 03:05:35.796  INFO 1 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : [] Initializing ExecutorService 'cancellableStageExecutor'
+2021-03-09 03:05:36.126  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:05:36.129  INFO 1 --- [pool-2-thread-2] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Cleaning up 0 orphaned active executions
+2021-03-09 03:05:36.263  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: invalidExecutionId
+2021-03-09 03:05:36.263  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: completeTask
+2021-03-09 03:05:36.263  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: pauseStage
+2021-03-09 03:05:36.264  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: startStage
+2021-03-09 03:05:36.264  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: noDownstreamTasks
+2021-03-09 03:05:36.265  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: completeExecution
+2021-03-09 03:05:36.265  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: startExecution
+2021-03-09 03:05:36.265  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: invalidTaskId
+2021-03-09 03:05:36.265  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: invalidTaskType
+2021-03-09 03:05:36.265  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: continueParentStage
+2021-03-09 03:05:36.265  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: resumeExecution
+2021-03-09 03:05:36.266  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: resumeStage
+2021-03-09 03:05:36.266  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: pauseTask
+2021-03-09 03:05:36.266  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: restartStage
+2021-03-09 03:05:36.266  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: runTask
+2021-03-09 03:05:36.267  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: skipStage
+2021-03-09 03:05:36.267  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: resumeTask
+2021-03-09 03:05:36.267  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: cancelExecution
+2021-03-09 03:05:36.268  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: startTask
+2021-03-09 03:05:36.268  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: rescheduleExecution
+2021-03-09 03:05:36.268  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: invalidStageId
+2021-03-09 03:05:36.268  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: completeStage
+2021-03-09 03:05:36.268  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: abortStage
+2021-03-09 03:05:36.268  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: startWaitingExecutions
+2021-03-09 03:05:36.269  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Message: cancelStage
+2021-03-09 03:05:36.309  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Attribute: attempts
+2021-03-09 03:05:36.310  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Attribute: ackAttempts
+2021-03-09 03:05:36.310  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Attribute: maxAttempts
+2021-03-09 03:05:36.346  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Attribute: deadMessage
+2021-03-09 03:05:36.347  INFO 1 --- [           main] c.n.s.c.SpringObjectMapperConfigurer     : [] Registering subtype of Attribute: totalThrottleTime
+2021-03-09 03:05:36.491  INFO 1 --- [           main] com.netflix.spinnaker.q.QueueProcessor   : [] Using queue RedisQueue[orca.task.queue]
+2021-03-09 03:05:36.594  INFO 1 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : [] 
+
+Using generated security password: 16b98772-961e-42dd-a8a0-8c014df2e8ed
+
+2021-03-09 03:05:36.744  INFO 1 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : [] Creating filter chain: org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequest$EndpointRequestMatcher@50a2431f, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@506bc254, org.springframework.security.web.context.SecurityContextPersistenceFilter@1fbb2a97, org.springframework.security.web.header.HeaderWriterFilter@75de0da8, org.springframework.security.web.csrf.CsrfFilter@4f58822a, org.springframework.security.web.authentication.logout.LogoutFilter@18ac5b83, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@67026899, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3646f314, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42140584, org.springframework.security.web.session.SessionManagementFilter@1d059b5c, org.springframework.security.web.access.ExceptionTranslationFilter@3887479d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@347c2a1a]
+2021-03-09 03:05:36.747  INFO 1 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : [] Creating filter chain: Ant [pattern='/spectator/metrics'], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@948335d, org.springframework.security.web.context.SecurityContextPersistenceFilter@74554e68, org.springframework.security.web.header.HeaderWriterFilter@46766b17, org.springframework.security.web.csrf.CsrfFilter@44eb735c, org.springframework.security.web.authentication.logout.LogoutFilter@6eae675d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@738eae2f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6554d9a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5a8a2982, org.springframework.security.web.session.SessionManagementFilter@6b3bb1c0, org.springframework.security.web.access.ExceptionTranslationFilter@5d0b5aef, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5bd62f9d]
+2021-03-09 03:05:36.749  INFO 1 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : [] Creating filter chain: any request, [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@47546cdf, com.netflix.spinnaker.fiat.shared.FiatAuthenticationFilter@5928fb8b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@253fefea, org.springframework.security.web.access.ExceptionTranslationFilter@4c199b8e]
+2021-03-09 03:05:36.784  INFO 1 --- [           main] .s.o.t.TaskSchedulerMetricsPostProcessor : [] Applying metrics to class org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler taskScheduler
+2021-03-09 03:05:36.788  INFO 1 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : [] Initializing ExecutorService 'taskScheduler'
+2021-03-09 03:05:36.936  INFO 1 --- [           main] o.h.validator.internal.util.Version      : [] HV000001: Hibernate Validator 6.0.18.Final
+2021-03-09 03:05:37.936  INFO 1 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : [] Exposing 2 endpoint(s) beneath base path ''
+2021-03-09 03:05:38.048  INFO 1 --- [           main] o.a.coyote.http11.Http11NioProtocol      : [] Starting ProtocolHandler ["http-nio-0.0.0.0-8083"]
+2021-03-09 03:05:38.063  WARN 1 --- [       events-8] c.n.s.k.d.NoDiscoveryStatusPublisher     : [] No service discovery client is available, assuming application is UP
+2021-03-09 03:05:38.085  INFO 1 --- [    scheduler-2] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:05:38.086  INFO 1 --- [      events-10] c.n.s.q.discovery.DiscoveryActivator     : [] Instance is UP... DiscoveryActivator starting
+2021-03-09 03:05:38.094  INFO 1 --- [      events-12] c.n.s.k.d.DiscoveryStatusListener        : [] Instance status has changed to UP in service discovery
+2021-03-09 03:05:38.164  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : [] Tomcat started on port(s): 8083 (http) with context path ''
+2021-03-09 03:05:38.170  INFO 1 --- [           main] com.netflix.spinnaker.orca.Main          : [] Started Main in 17.215 seconds (JVM running for 18.67)
+2021-03-09 03:05:45.839  INFO 1 --- [0.0-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : [] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-09 03:05:45.840  INFO 1 --- [0.0-8083-exec-1] o.s.web.servlet.DispatcherServlet        : [] Initializing Servlet 'dispatcherServlet'
+2021-03-09 03:05:45.867  INFO 1 --- [0.0-8083-exec-1] o.s.web.servlet.DispatcherServlet        : [] Completed initialization in 26 ms
+2021-03-09 03:06:36.128  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:06:38.086  INFO 1 --- [    scheduler-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:07:36.130  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:07:38.086  INFO 1 --- [    scheduler-6] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:08:36.132  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:08:38.087  INFO 1 --- [    scheduler-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:09:36.134  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:09:38.087  INFO 1 --- [    scheduler-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:10:36.132  INFO 1 --- [pool-2-thread-2] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Cleaning up 0 orphaned active executions
+2021-03-09 03:10:36.136  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:10:38.087  INFO 1 --- [    scheduler-7] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:11:36.139  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:11:38.088  INFO 1 --- [    scheduler-6] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:12:36.141  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:12:38.088  INFO 1 --- [    scheduler-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:13:36.143  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:13:38.089  INFO 1 --- [    scheduler-6] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:14:36.145  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:14:38.089  INFO 1 --- [    scheduler-2] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:15:36.134  INFO 1 --- [pool-2-thread-2] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Cleaning up 0 orphaned active executions
+2021-03-09 03:15:36.146  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:15:38.090  INFO 1 --- [   scheduler-10] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:16:36.152  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:16:38.090  INFO 1 --- [    scheduler-5] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:17:36.154  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:17:38.091  INFO 1 --- [    scheduler-6] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:18:36.156  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:18:38.092  INFO 1 --- [    scheduler-3] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:19:36.158  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:19:38.092  INFO 1 --- [    scheduler-3] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:20:36.136  INFO 1 --- [pool-2-thread-2] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Cleaning up 0 orphaned active executions
+2021-03-09 03:20:36.160  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:20:38.093  INFO 1 --- [    scheduler-2] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:21:36.162  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:21:38.093  INFO 1 --- [    scheduler-9] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:22:36.164  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:22:38.094  INFO 1 --- [    scheduler-5] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:23:36.166  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:23:38.095  INFO 1 --- [    scheduler-5] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:24:36.168  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:24:38.096  INFO 1 --- [    scheduler-5] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:25:36.138  INFO 1 --- [pool-2-thread-2] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Cleaning up 0 orphaned active executions
+2021-03-09 03:25:36.169  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:25:38.096  INFO 1 --- [    scheduler-2] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:26:36.171  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:26:38.096  INFO 1 --- [    scheduler-5] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:27:36.173  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:27:38.097  INFO 1 --- [    scheduler-4] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:28:36.175  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:28:38.097  INFO 1 --- [    scheduler-7] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:29:36.177  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:29:38.098  INFO 1 --- [    scheduler-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:30:36.143  INFO 1 --- [pool-2-thread-2] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Cleaning up 0 orphaned active executions
+2021-03-09 03:30:36.179  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:30:38.098  INFO 1 --- [   scheduler-10] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:31:36.181  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:31:38.099  INFO 1 --- [    scheduler-5] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:32:36.183  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:32:38.099  INFO 1 --- [   scheduler-10] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:33:36.185  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:33:38.100  INFO 1 --- [    scheduler-8] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:34:36.187  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:34:38.100  INFO 1 --- [    scheduler-5] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:35:36.145  INFO 1 --- [pool-2-thread-2] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Cleaning up 0 orphaned active executions
+2021-03-09 03:35:36.189  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:35:38.101  INFO 1 --- [   scheduler-10] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:36:36.191  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:36:38.101  INFO 1 --- [    scheduler-8] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:37:36.193  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:37:38.101  INFO 1 --- [    scheduler-3] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:38:36.195  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:38:38.102  INFO 1 --- [    scheduler-6] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:39:36.197  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:39:38.102  INFO 1 --- [    scheduler-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:40:36.147  INFO 1 --- [pool-2-thread-2] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Cleaning up 0 orphaned active executions
+2021-03-09 03:40:36.198  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:40:38.103  INFO 1 --- [    scheduler-8] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:41:36.200  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:41:38.103  INFO 1 --- [   scheduler-10] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:42:36.202  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:42:38.103  INFO 1 --- [    scheduler-9] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:43:36.204  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:43:38.104  INFO 1 --- [    scheduler-5] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:44:36.206  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:44:38.104  INFO 1 --- [    scheduler-2] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:45:36.149  INFO 1 --- [pool-2-thread-2] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Cleaning up 0 orphaned active executions
+2021-03-09 03:45:36.207  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:45:38.105  INFO 1 --- [    scheduler-4] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:46:36.209  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:46:38.105  INFO 1 --- [    scheduler-9] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:47:36.211  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:47:38.105  INFO 1 --- [    scheduler-6] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:48:36.213  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:48:38.106  INFO 1 --- [   scheduler-10] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:49:36.215  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:49:38.106  INFO 1 --- [    scheduler-9] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:50:36.151  INFO 1 --- [pool-2-thread-2] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Cleaning up 0 orphaned active executions
+2021-03-09 03:50:36.216  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:50:38.107  INFO 1 --- [    scheduler-4] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:51:36.220  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:51:38.107  INFO 1 --- [    scheduler-1] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:52:36.222  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:52:38.107  INFO 1 --- [    scheduler-5] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:53:36.224  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:53:38.108  INFO 1 --- [    scheduler-2] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:54:36.226  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:54:38.108  INFO 1 --- [    scheduler-9] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:55:36.153  INFO 1 --- [pool-2-thread-2] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Cleaning up 0 orphaned active executions
+2021-03-09 03:55:36.227  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:55:38.108  INFO 1 --- [    scheduler-8] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:56:36.229  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:56:38.109  INFO 1 --- [    scheduler-4] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:57:36.231  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:57:38.109  INFO 1 --- [   scheduler-10] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:58:36.233  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:58:38.110  INFO 1 --- [    scheduler-2] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
+2021-03-09 03:59:36.235  INFO 1 --- [pool-2-thread-1] c.n.s.o.t.RedisActiveExecutionsMonitor   : [] Refreshing active execution gauges (active: 0)
+2021-03-09 03:59:38.110  INFO 1 --- [    scheduler-4] s.k.p.u.r.r.RemotePluginInfoReleaseCache : [] Cached 0 remote plugin configurations.
