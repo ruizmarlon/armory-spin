@@ -4,7 +4,7 @@ adapated from: https://docs.armory.io/docs/installation/guide/install-on-k8s/
 
 Environment:
 eks: v1.18.9
-armory: 2.23.7
+armory: 2.23.5 (there was a typo in my email originally)
 
 (using spinnaker operator procedure)
 
