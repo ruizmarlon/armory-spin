@@ -1,0 +1,26 @@
+---
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: spin-ingress
+  labels:
+    app: spin
+    cluster: spin-ingress
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+#    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  -
+    host: <redacted for publishing> 
+    # ^ If we have other things running in our cluster, we should uncomment this line and specify a valid DNS name
+    http:
+      paths:
+      - backend:
+          serviceName: spin-deck
+          servicePort: 9000
+        path: /
+      - backend:
+          serviceName: spin-gate
+          servicePort: 8084
+        path: /api/v1
