@@ -93,7 +93,7 @@ spin-ingress   <none>   *       my-redacted-ingress-lb                          
 Result/issues:
 Can access main page at http://my-redacted-ingress-lb
   - Clicking on `Projects` shows loading but never loads.
-  - Clicking on `Aplications` shows error message "Error fetching applications. Check that your gate endpoint is accessible. Further information on troubleshooting this error is available here."
+  - Clicking on `Aplications` shows error message "Error fetching applications. Check that your gate endpoint is accessible. Further information on troubleshooting this error is available [here](https://spinnaker.io/setup/quickstart/faq/)." The link takes me to a haylard link but I am using spinnaker operator,
   - Going to url http://my-redacted-ingress-lb/api/v1/health results in
 ```
 <Map>
@@ -104,5 +104,5 @@ Can access main page at http://my-redacted-ingress-lb
 </Map>
 ```
   
-Pod logs are here: https://github.com/ruizmarlon/armory-spin/tree/main/logs
+Pod logs are [here](https://github.com/ruizmarlon/armory-spin/tree/main/logs)
 
