@@ -2,8 +2,8 @@
 
 adpated from: https://docs.armory.io/docs/installation/guide/install-on-k8s/
 
+Environment:
 eks: v1.18.9
-
 armory: 2.23.7
 
 (using spinnaker operator procedure)
