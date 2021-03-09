@@ -1,0 +1,180 @@
+{"level":"info","ts":1615258488.7043839,"logger":"cmd","msg":"Armory Operator Version: 1.2.3"}
+{"level":"info","ts":1615258488.7083623,"logger":"cmd","msg":"Spinnaker Operator Version: 1.2.1"}
+{"level":"info","ts":1615258488.708391,"logger":"cmd","msg":"Go Version: go1.13.8"}
+{"level":"info","ts":1615258488.7084014,"logger":"cmd","msg":"Go OS/Arch: linux/amd64"}
+{"level":"info","ts":1615258488.7084064,"logger":"cmd","msg":"Version of operator-sdk: v0.10.0+git"}
+{"level":"info","ts":1615258488.7084165,"logger":"cmd","msg":"Watching Spinnaker configuration in cluster"}
+{"level":"info","ts":1615258488.7113562,"logger":"leader","msg":"Trying to become the leader."}
+{"level":"info","ts":1615258489.185287,"logger":"leader","msg":"No pre-existing lock was found."}
+{"level":"info","ts":1615258489.19457,"logger":"leader","msg":"Became the leader."}
+{"level":"info","ts":1615258489.6491063,"logger":"controller-runtime.metrics","msg":"metrics server is starting to listen","addr":"0.0.0.0:8383"}
+{"level":"info","ts":1615258489.649341,"logger":"cmd","msg":"Registering Components."}
+{"level":"info","ts":1615258489.6507113,"logger":"controller-runtime.controller","msg":"Starting EventSource","controller":"spinnakerservice-controller","source":"kind source: /, Kind="}
+{"level":"info","ts":1615258489.650836,"logger":"controller-runtime.controller","msg":"Starting EventSource","controller":"spinnakerservice-controller","source":"kind source: /, Kind="}
+{"level":"info","ts":1615258489.650917,"logger":"controller-runtime.controller","msg":"Starting EventSource","controller":"spinnakerservice-controller","source":"kind source: /, Kind="}
+{"level":"info","ts":1615258489.6511145,"logger":"controller-runtime.controller","msg":"Starting EventSource","controller":"spinnakeraccount-controller","source":"kind source: /, Kind="}
+{"level":"info","ts":1615258489.651204,"logger":"cmd","msg":"starting webhook server..."}
+{"level":"info","ts":1615258492.046693,"logger":"metrics","msg":"Metrics Service object created","Service.Name":"spinnaker-operator-metrics","Service.Namespace":"spinnaker-operator"}
+{"level":"info","ts":1615258492.0467584,"logger":"cmd","msg":"Starting the Cmd."}
+{"level":"info","ts":1615258492.0476582,"logger":"controller-runtime.manager","msg":"starting metrics server","path":"/metrics"}
+{"level":"info","ts":1615258492.251295,"logger":"controller-runtime.controller","msg":"Starting Controller","controller":"spinnakerservice-controller"}
+{"level":"info","ts":1615258492.251495,"logger":"controller-runtime.controller","msg":"Starting Controller","controller":"spinnakeraccount-controller"}
+{"level":"info","ts":1615258492.2516162,"logger":"controller-runtime.certwatcher","msg":"Updated current TLS certificate"}
+{"level":"info","ts":1615258492.2517626,"logger":"controller-runtime.certwatcher","msg":"Starting certificate watcher"}
+{"level":"info","ts":1615258492.3518853,"logger":"controller-runtime.controller","msg":"Starting workers","controller":"spinnakerservice-controller","worker count":1}
+{"level":"info","ts":1615258492.3521526,"logger":"controller-runtime.controller","msg":"Starting workers","controller":"spinnakeraccount-controller","worker count":1}
+{"level":"info","ts":1615259080.852203,"logger":"spinvalidate","msg":"Handling admission request for: SpinnakerService"}
+{"level":"info","ts":1615259080.8537414,"logger":"spinvalidate","msg":"Validating SpinnakerService","metadata.name":"spinnaker"}
+{"level":"info","ts":1615259080.8538718,"logger":"spinvalidate","msg":"Running validator *validate.accountValidator"}
+{"level":"info","ts":1615259080.8539987,"logger":"spinvalidate","msg":"Running validator *validate.dockerRegistryValidator"}
+{"level":"info","ts":1615259080.8540387,"logger":"spinvalidate","msg":"Running validator *validate.versionValidator"}
+{"level":"info","ts":1615259080.854514,"logger":"spinvalidate","msg":"Running validator *validate.awsAccountValidator"}
+{"level":"info","ts":1615259080.854544,"logger":"spinvalidate","msg":"Running validator *validate.halValidator"}
+{"level":"info","ts":1615259082.1958144,"logger":"spinvalidate","msg":"INFO: Stats are currently ENABLED. Usage statistics are being collected. Thank you! These stats inform improvements to the product, and that helps the community. To disable, run `hal config stats disable`. To learn more about what and how stats data is used, please see https://www.spinnaker.io/community/stats. at default.stats"}
+{"level":"info","ts":1615259082.1958704,"logger":"spinvalidate","msg":"SpinnakerService is valid","metadata.name":"spinnaker"}
+{"level":"info","ts":1615259082.2116387,"logger":"spinnakerservice","msg":"reconciling SpinnakerService","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259082.211902,"logger":"spinnakerservice","msg":"checking spindeploy deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259082.2126215,"logger":"spinnakerservice","msg":"*config.changeDetector detected a change that needs to be reconciled","Service":"spinnaker"}
+{"level":"info","ts":1615259082.2127738,"logger":"spinnakerservice","msg":"retrieving complete Spinnaker configuration","Service":"spinnaker"}
+{"level":"info","ts":1615259082.2128892,"logger":"spinnakerservice","msg":"applying options to Spinnaker config with 14 generators","Service":"spinnaker"}
+{"level":"info","ts":1615259082.213099,"logger":"spinnakerservice","msg":"generating manifests with Halyard","Service":"spinnaker"}
+{"level":"info","ts":1615259087.5102363,"logger":"spinnakerservice","msg":"applying options to generated manifests","Service":"spinnaker"}
+{"level":"info","ts":1615259087.5357077,"logger":"spinnakerservice","msg":"accounts disabled, skipping"}
+{"level":"info","ts":1615259087.5357919,"logger":"spinnakerservice","msg":"saving 28 manifests across 8 services"}
+{"level":"info","ts":1615259087.5358,"logger":"spinnakerservice","msg":"saving deployment manifest for rosco","Service":"spinnaker"}
+{"level":"info","ts":1615259087.5509279,"logger":"spinnakerservice","msg":"saving service manifest for rosco","Service":"spinnaker"}
+{"level":"info","ts":1615259087.57826,"logger":"spinnakerservice","msg":"saving resource manifest spin-rosco-files-1724949822 for rosco","Service":"spinnaker"}
+{"level":"info","ts":1615259087.589122,"logger":"spinnakerservice","msg":"saving resource manifest spin-rosco-files-1245432589 for rosco","Service":"spinnaker"}
+{"level":"info","ts":1615259087.6070065,"logger":"spinnakerservice","msg":"saving resource manifest spin-rosco-files-442774875 for rosco","Service":"spinnaker"}
+{"level":"info","ts":1615259087.620726,"logger":"spinnakerservice","msg":"saving deployment manifest for echo","Service":"spinnaker"}
+{"level":"info","ts":1615259087.634177,"logger":"spinnakerservice","msg":"saving service manifest for echo","Service":"spinnaker"}
+{"level":"info","ts":1615259087.661459,"logger":"spinnakerservice","msg":"saving resource manifest spin-echo-files-1770252896 for echo","Service":"spinnaker"}
+{"level":"info","ts":1615259087.6740637,"logger":"spinnakerservice","msg":"saving deployment manifest for gate","Service":"spinnaker"}
+{"level":"info","ts":1615259087.6925597,"logger":"spinnakerservice","msg":"saving service manifest for gate","Service":"spinnaker"}
+{"level":"info","ts":1615259087.7344558,"logger":"spinnakerservice","msg":"saving resource manifest spin-gate-files-854853055 for gate","Service":"spinnaker"}
+{"level":"info","ts":1615259087.749892,"logger":"spinnakerservice","msg":"saving deployment manifest for redis","Service":"spinnaker"}
+{"level":"info","ts":1615259087.758864,"logger":"spinnakerservice","msg":"saving service manifest for redis","Service":"spinnaker"}
+{"level":"info","ts":1615259087.7837985,"logger":"spinnakerservice","msg":"saving deployment manifest for clouddriver","Service":"spinnaker"}
+{"level":"info","ts":1615259087.8173587,"logger":"spinnakerservice","msg":"saving service manifest for clouddriver","Service":"spinnaker"}
+{"level":"info","ts":1615259087.8481925,"logger":"spinnakerservice","msg":"saving resource manifest spin-clouddriver-files-54176829 for clouddriver","Service":"spinnaker"}
+{"level":"info","ts":1615259087.866501,"logger":"spinnakerservice","msg":"saving deployment manifest for orca","Service":"spinnaker"}
+{"level":"info","ts":1615259087.8824708,"logger":"spinnakerservice","msg":"saving service manifest for orca","Service":"spinnaker"}
+{"level":"info","ts":1615259087.9143295,"logger":"spinnakerservice","msg":"saving resource manifest spin-orca-files-1265727132 for orca","Service":"spinnaker"}
+{"level":"info","ts":1615259087.9292445,"logger":"spinnakerservice","msg":"saving resource manifest spin-orca-files-795629369 for orca","Service":"spinnaker"}
+{"level":"info","ts":1615259087.9371324,"logger":"spinnakerservice","msg":"saving deployment manifest for front50","Service":"spinnaker"}
+{"level":"info","ts":1615259087.9565008,"logger":"spinnakerservice","msg":"saving service manifest for front50","Service":"spinnaker"}
+{"level":"info","ts":1615259087.992765,"logger":"spinnakerservice","msg":"saving resource manifest spin-front50-files-718439047 for front50","Service":"spinnaker"}
+{"level":"info","ts":1615259088.0136437,"logger":"spinnakerservice","msg":"saving resource manifest spin-front50-files-1012403229 for front50","Service":"spinnaker"}
+{"level":"info","ts":1615259088.0297742,"logger":"spinnakerservice","msg":"saving resource manifest spin-front50-files-1012403229 for front50","Service":"spinnaker"}
+{"level":"info","ts":1615259088.041624,"logger":"spinnakerservice","msg":"saving deployment manifest for deck","Service":"spinnaker"}
+{"level":"info","ts":1615259088.0528257,"logger":"spinnakerservice","msg":"saving service manifest for deck","Service":"spinnaker"}
+{"level":"info","ts":1615259088.0847583,"logger":"spinnakerservice","msg":"saving resource manifest spin-deck-files-1907827030 for deck","Service":"spinnaker"}
+{"level":"info","ts":1615259088.0973191,"logger":"spinnakerservice","msg":"deployed version 2.23.5, setting status","Service":"spinnaker"}
+{"level":"info","ts":1615259088.1206079,"logger":"spinnakerservice","msg":"reconciling SpinnakerService","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259088.120829,"logger":"spinnakerservice","msg":"checking spindeploy deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259088.1211426,"logger":"spinnakerservice","msg":"*config.changeDetector detected a change that needs to be reconciled","Service":"spinnaker"}
+{"level":"info","ts":1615259088.1212296,"logger":"spinnakerservice","msg":"retrieving complete Spinnaker configuration","Service":"spinnaker"}
+{"level":"info","ts":1615259088.1218195,"logger":"spinnakerservice","msg":"applying options to Spinnaker config with 14 generators","Service":"spinnaker"}
+{"level":"info","ts":1615259088.122019,"logger":"spinnakerservice","msg":"generating manifests with Halyard","Service":"spinnaker"}
+{"level":"info","ts":1615259092.6759114,"logger":"spinnakerservice","msg":"applying options to generated manifests","Service":"spinnaker"}
+{"level":"info","ts":1615259092.6909673,"logger":"spinnakerservice","msg":"accounts disabled, skipping"}
+{"level":"info","ts":1615259092.6938274,"logger":"spinnakerservice","msg":"saving 28 manifests across 8 services"}
+{"level":"info","ts":1615259092.6938396,"logger":"spinnakerservice","msg":"saving deployment manifest for orca","Service":"spinnaker"}
+{"level":"info","ts":1615259092.7225842,"logger":"spinnakerservice","msg":"saving service manifest for orca","Service":"spinnaker"}
+{"level":"info","ts":1615259092.7369814,"logger":"spinnakerservice","msg":"saving resource manifest spin-orca-files-1265727132 for orca","Service":"spinnaker"}
+{"level":"info","ts":1615259092.7463238,"logger":"spinnakerservice","msg":"saving resource manifest spin-orca-files-795629369 for orca","Service":"spinnaker"}
+{"level":"info","ts":1615259092.7550783,"logger":"spinnakerservice","msg":"saving deployment manifest for front50","Service":"spinnaker"}
+{"level":"info","ts":1615259092.768203,"logger":"spinnakerservice","msg":"saving service manifest for front50","Service":"spinnaker"}
+{"level":"info","ts":1615259092.781779,"logger":"spinnakerservice","msg":"saving resource manifest spin-front50-files-718439047 for front50","Service":"spinnaker"}
+{"level":"info","ts":1615259092.7903442,"logger":"spinnakerservice","msg":"saving resource manifest spin-front50-files-1012403229 for front50","Service":"spinnaker"}
+{"level":"info","ts":1615259092.7997034,"logger":"spinnakerservice","msg":"saving resource manifest spin-front50-files-1012403229 for front50","Service":"spinnaker"}
+{"level":"info","ts":1615259092.8084261,"logger":"spinnakerservice","msg":"saving deployment manifest for deck","Service":"spinnaker"}
+{"level":"info","ts":1615259092.8276606,"logger":"spinnakerservice","msg":"saving service manifest for deck","Service":"spinnaker"}
+{"level":"info","ts":1615259092.8465114,"logger":"spinnakerservice","msg":"saving resource manifest spin-deck-files-1907827030 for deck","Service":"spinnaker"}
+{"level":"info","ts":1615259092.8558588,"logger":"spinnakerservice","msg":"saving deployment manifest for rosco","Service":"spinnaker"}
+{"level":"info","ts":1615259092.8751488,"logger":"spinnakerservice","msg":"saving service manifest for rosco","Service":"spinnaker"}
+{"level":"info","ts":1615259092.891685,"logger":"spinnakerservice","msg":"saving resource manifest spin-rosco-files-1724949822 for rosco","Service":"spinnaker"}
+{"level":"info","ts":1615259092.9046366,"logger":"spinnakerservice","msg":"saving resource manifest spin-rosco-files-1245432589 for rosco","Service":"spinnaker"}
+{"level":"info","ts":1615259092.9242961,"logger":"spinnakerservice","msg":"saving resource manifest spin-rosco-files-442774875 for rosco","Service":"spinnaker"}
+{"level":"info","ts":1615259092.9342752,"logger":"spinnakerservice","msg":"saving deployment manifest for echo","Service":"spinnaker"}
+{"level":"info","ts":1615259092.9477522,"logger":"spinnakerservice","msg":"saving service manifest for echo","Service":"spinnaker"}
+{"level":"info","ts":1615259092.962025,"logger":"spinnakerservice","msg":"saving resource manifest spin-echo-files-540527049 for echo","Service":"spinnaker"}
+{"level":"info","ts":1615259092.9729702,"logger":"spinnakerservice","msg":"saving deployment manifest for gate","Service":"spinnaker"}
+{"level":"info","ts":1615259092.9899392,"logger":"spinnakerservice","msg":"saving service manifest for gate","Service":"spinnaker"}
+{"level":"info","ts":1615259093.0144186,"logger":"spinnakerservice","msg":"saving resource manifest spin-gate-files-854853055 for gate","Service":"spinnaker"}
+{"level":"info","ts":1615259093.0293276,"logger":"spinnakerservice","msg":"saving deployment manifest for redis","Service":"spinnaker"}
+{"level":"info","ts":1615259093.0502574,"logger":"spinnakerservice","msg":"saving service manifest for redis","Service":"spinnaker"}
+{"level":"info","ts":1615259093.0632803,"logger":"spinnakerservice","msg":"saving deployment manifest for clouddriver","Service":"spinnaker"}
+{"level":"info","ts":1615259093.0784416,"logger":"spinnakerservice","msg":"saving service manifest for clouddriver","Service":"spinnaker"}
+{"level":"info","ts":1615259093.0929005,"logger":"spinnakerservice","msg":"saving resource manifest spin-clouddriver-files-54176829 for clouddriver","Service":"spinnaker"}
+{"level":"info","ts":1615259093.1016226,"logger":"spinnakerservice","msg":"deployed version 2.23.5, setting status","Service":"spinnaker"}
+{"level":"error","ts":1615259093.1128223,"logger":"controller-runtime.controller","msg":"Reconciler error","controller":"spinnakerservice-controller","request":"spinnaker/spinnaker","error":"Operation cannot be fulfilled on spinnakerservices.spinnaker.armory.io \"spinnaker\": the object has been modified; please apply your changes to the latest version and try again","stacktrace":"github.com/go-logr/zapr.(*zapLogger).Error\n\t/opt/spinnaker-operator/build/vendor/github.com/go-logr/zapr/zapr.go:128\nsigs.k8s.io/controller-runtime/pkg/internal/controller.(*Controller).reconcileHandler\n\t/opt/spinnaker-operator/build/vendor/sigs.k8s.io/controller-runtime/pkg/internal/controller/controller.go:218\nsigs.k8s.io/controller-runtime/pkg/internal/controller.(*Controller).processNextWorkItem\n\t/opt/spinnaker-operator/build/vendor/sigs.k8s.io/controller-runtime/pkg/internal/controller/controller.go:192\nsigs.k8s.io/controller-runtime/pkg/internal/controller.(*Controller).worker\n\t/opt/spinnaker-operator/build/vendor/sigs.k8s.io/controller-runtime/pkg/internal/controller/controller.go:171\nk8s.io/apimachinery/pkg/util/wait.JitterUntil.func1\n\t/opt/spinnaker-operator/build/vendor/k8s.io/apimachinery/pkg/util/wait/wait.go:152\nk8s.io/apimachinery/pkg/util/wait.JitterUntil\n\t/opt/spinnaker-operator/build/vendor/k8s.io/apimachinery/pkg/util/wait/wait.go:153\nk8s.io/apimachinery/pkg/util/wait.Until\n\t/opt/spinnaker-operator/build/vendor/k8s.io/apimachinery/pkg/util/wait/wait.go:88"}
+{"level":"info","ts":1615259094.1131516,"logger":"spinnakerservice","msg":"reconciling SpinnakerService","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259094.1132345,"logger":"spinnakerservice","msg":"checking spindeploy deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259094.1133292,"logger":"spinnakerservice","msg":"checking networkPolicies deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259094.429915,"logger":"spinnakerservice","msg":"reconciling SpinnakerService","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259094.429975,"logger":"spinnakerservice","msg":"checking spindeploy deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259094.4300525,"logger":"spinnakerservice","msg":"checking networkPolicies deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259123.2028742,"logger":"spinnakerservice","msg":"reconciling SpinnakerService","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259123.2062109,"logger":"spinnakerservice","msg":"checking spindeploy deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259123.20889,"logger":"spinnakerservice","msg":"checking networkPolicies deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259123.2325664,"logger":"spinnakerservice","msg":"reconciling SpinnakerService","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259123.2326427,"logger":"spinnakerservice","msg":"checking spindeploy deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259123.2382352,"logger":"spinnakerservice","msg":"checking networkPolicies deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259142.1874812,"logger":"spinnakerservice","msg":"reconciling SpinnakerService","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259142.1898108,"logger":"spinnakerservice","msg":"checking spindeploy deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259142.1899848,"logger":"spinnakerservice","msg":"checking networkPolicies deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259142.2042146,"logger":"spinnakerservice","msg":"reconciling SpinnakerService","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259142.2044032,"logger":"spinnakerservice","msg":"checking spindeploy deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259142.2045379,"logger":"spinnakerservice","msg":"checking networkPolicies deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259146.1236382,"logger":"spinnakerservice","msg":"reconciling SpinnakerService","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259146.1248527,"logger":"spinnakerservice","msg":"checking spindeploy deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259146.126328,"logger":"spinnakerservice","msg":"checking networkPolicies deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259146.1453197,"logger":"spinnakerservice","msg":"reconciling SpinnakerService","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259146.1462803,"logger":"spinnakerservice","msg":"checking spindeploy deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259146.147164,"logger":"spinnakerservice","msg":"checking networkPolicies deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259161.3287888,"logger":"spinnakerservice","msg":"reconciling SpinnakerService","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259161.3312163,"logger":"spinnakerservice","msg":"checking spindeploy deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259161.3313804,"logger":"spinnakerservice","msg":"checking networkPolicies deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259161.35654,"logger":"spinnakerservice","msg":"reconciling SpinnakerService","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259161.3565989,"logger":"spinnakerservice","msg":"checking spindeploy deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259161.3566763,"logger":"spinnakerservice","msg":"checking networkPolicies deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259175.5991404,"logger":"spinnakerservice","msg":"reconciling SpinnakerService","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259175.5992615,"logger":"spinnakerservice","msg":"checking spindeploy deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259175.59939,"logger":"spinnakerservice","msg":"checking networkPolicies deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259175.61843,"logger":"spinnakerservice","msg":"reconciling SpinnakerService","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259175.6185374,"logger":"spinnakerservice","msg":"checking spindeploy deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259175.6186442,"logger":"spinnakerservice","msg":"checking networkPolicies deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259180.7007792,"logger":"spinnakerservice","msg":"reconciling SpinnakerService","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259180.7012281,"logger":"spinnakerservice","msg":"checking spindeploy deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259180.7014194,"logger":"spinnakerservice","msg":"checking networkPolicies deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259180.7209945,"logger":"spinnakerservice","msg":"reconciling SpinnakerService","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259180.721155,"logger":"spinnakerservice","msg":"checking spindeploy deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259180.7213264,"logger":"spinnakerservice","msg":"checking networkPolicies deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259184.21213,"logger":"spinnakerservice","msg":"reconciling SpinnakerService","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259184.2124338,"logger":"spinnakerservice","msg":"checking spindeploy deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259184.2128315,"logger":"spinnakerservice","msg":"checking networkPolicies deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259184.2269657,"logger":"spinnakerservice","msg":"reconciling SpinnakerService","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259184.2270195,"logger":"spinnakerservice","msg":"checking spindeploy deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259184.2275445,"logger":"spinnakerservice","msg":"checking networkPolicies deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259201.5346143,"logger":"spinnakerservice","msg":"reconciling SpinnakerService","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259201.5349116,"logger":"spinnakerservice","msg":"checking spindeploy deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259201.5361664,"logger":"spinnakerservice","msg":"checking networkPolicies deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259201.5520196,"logger":"spinnakerservice","msg":"reconciling SpinnakerService","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259201.5527651,"logger":"spinnakerservice","msg":"checking spindeploy deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259201.5529282,"logger":"spinnakerservice","msg":"checking networkPolicies deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259206.3880036,"logger":"spinnakerservice","msg":"reconciling SpinnakerService","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259206.3880882,"logger":"spinnakerservice","msg":"checking spindeploy deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259206.3882496,"logger":"spinnakerservice","msg":"checking networkPolicies deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259206.4163573,"logger":"spinnakerservice","msg":"reconciling SpinnakerService","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259206.4164178,"logger":"spinnakerservice","msg":"checking spindeploy deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259206.4167473,"logger":"spinnakerservice","msg":"checking networkPolicies deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259206.438858,"logger":"spinnakerservice","msg":"reconciling SpinnakerService","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259206.439119,"logger":"spinnakerservice","msg":"checking spindeploy deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259206.4392989,"logger":"spinnakerservice","msg":"checking networkPolicies deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259206.4542444,"logger":"spinnakerservice","msg":"reconciling SpinnakerService","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259206.454499,"logger":"spinnakerservice","msg":"checking spindeploy deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259206.454666,"logger":"spinnakerservice","msg":"checking networkPolicies deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259206.474409,"logger":"spinnakerservice","msg":"reconciling SpinnakerService","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259206.474472,"logger":"spinnakerservice","msg":"checking spindeploy deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
+{"level":"info","ts":1615259206.4745502,"logger":"spinnakerservice","msg":"checking networkPolicies deployment","Request.Namespace":"spinnaker","Request.Name":"spinnaker"}
