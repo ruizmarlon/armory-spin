@@ -104,5 +104,5 @@ Can access main page at http://my-redacted-ingress-lb
 </Map>
 ```
   
-
+Pod logs are here: https://github.com/ruizmarlon/armory-spin/tree/main/logs
 
