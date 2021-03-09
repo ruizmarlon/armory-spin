@@ -1,6 +1,6 @@
 ## Setup Armory Spinnaker
 
-adpated from: https://docs.armory.io/docs/installation/guide/install-on-k8s/
+adapated from: https://docs.armory.io/docs/installation/guide/install-on-k8s/
 
 Environment:
 eks: v1.18.9
