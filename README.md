@@ -15,11 +15,10 @@ Install ingress:
 ```
 kubectl --kubeconfig kubeconfig-gke apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.35.0/deploy/static/provider/cloud/deploy.yaml
 ```
-also tried
+also tried a newer ingress-nginx with the same issues:
 ```
 kubectl --kubeconfig kubeconfig-gke apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.44.0/deploy/static/provider/cloud/deploy.yaml
 ```
-
 Check ingress:
 ```
 % kubectl get svc -n ingress-nginx
@@ -79,7 +78,7 @@ spin-redis-7d9d7dc48d-pbzgc        1/1     Running   0          37m
 spin-rosco-778c89bfd7-vp78k        1/1     Running   0          37m
 ```
 Setup ingress: (https://raw.githubusercontent.com/ruizmarlon/armory-spin/main/spin-ing.yml)
-(only running spinnaker so host wasn't applied during this apply but i have tried it both was in my testing)
+(only running spinnaker so host wasn't applied during this apply but i have tried it both ways in my testing)
 ```
 kubectl apply -f spin-ing.yml -n spinnaker
 ```
