@@ -1,0 +1,147 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  creationTimestamp: null
+  name: spin-role
+rules:
+- apiGroups:
+  - ""
+  resources:
+  - pods
+  - services
+  - endpoints
+  - persistentvolumeclaims
+  - events
+  - configmaps
+  - secrets
+  - namespaces
+  verbs:
+  - '*'
+- apiGroups:
+  - batch
+  - extensions
+  resources:
+  - jobs
+  verbs:
+  - '*'
+- apiGroups:
+  - apps
+  - extensions
+  resources:
+  - deployments
+  - daemonsets
+  - replicasets
+  - statefulsets
+  verbs:
+  - '*'
+- apiGroups:
+  - monitoring.coreos.com
+  resources:
+  - servicemonitors
+  verbs:
+  - get
+  - create
+- apiGroups:
+  - apps
+  resourceNames:
+  - spinnaker-operator
+  resources:
+  - deployments/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - metrics.k8s.io
+  resources:
+  - pods
+  verbs:
+  - '*'
+- apiGroups:
+  - apps
+  resourceNames:
+  - spinnaker-operator
+  resources:
+  - deployments/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - spinnaker.io
+  resources:
+  - '*'
+  - spinnakeraccounts
+  verbs:
+  - '*'
+- apiGroups:
+  - spinnaker.armory.io
+  resources:
+  - '*'
+  - spinnakerservices
+  verbs:
+  - '*'
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: spin-sa
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: spin-role-binding
+subjects:
+- kind: ServiceAccount
+  name: spin-sa
+roleRef:
+  kind: Role
+  name: spin-role
+  apiGroup: rbac.authorization.k8s.io
+---
+apiVersion: spinnaker.armory.io/v1alpha2
+kind: SpinnakerService
+metadata:
+  name: spinnaker
+spec:
+  spinnakerConfig:
+    config:
+      version: 2.23.5  # Replace with desired version of Armory to deploy
+      security:
+        apiSecurity:
+          overrideBaseUrl: http://<redacted for publishing>/api/v1  # Replace this with the IP address or DNS that points to our nginx ingress instance
+        uiSecurity:
+          overrideBaseUrl: http://<redacted for publishing>         # Replace this with the IP address or DNS that points to our nginx ingress instance
+      persistentStorage:
+        persistentStoreType: s3
+        s3:
+          bucket: <redacted for publishing> # Replace with the name of the S3 bucket created previously
+          region: us-east-2        # Replace with correct bucket's region
+          accessKeyId: <redacted for publishing>         # (Optional, set only when using an IAM user to authenticate to the bucket instead of an IAM role)
+          secretAccessKey: <redacted for publishing>     # (Optional, set only when using an IAM user to authenticate to the bucket instead of an IAM role)
+          rootFolder: Front50
+      features:
+        artifacts: true
+      providers:
+        kubernetes:
+          accounts:
+          - name: spinnaker
+            cacheThreads: 1
+            cachingPolicies: []
+            configureImagePullSecrets: true
+            customResources: []
+            dockerRegistries: []
+            kinds: []
+            namespaces:
+            - spinnaker  # Name of the namespace where Armory is installed
+            oAuthScopes: []
+            omitKinds: []
+            omitNamespaces: []
+            onlySpinnakerManaged: false
+            permissions: {}
+            providerVersion: V2
+            requiredGroupMembership: []
+            serviceAccount: true
+          enabled: true
+          primaryAccount: spinnaker
+    service-settings:
+      clouddriver:
+        kubernetes:
+          serviceAccountName: spin-sa
+
