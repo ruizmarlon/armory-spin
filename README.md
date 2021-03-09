@@ -55,7 +55,7 @@ spinnaker-operator-7b66898956-r65j5   2/2     Running   0          36m
 ```
 Install Armory using spinnakerservice.yml (https://raw.githubusercontent.com/ruizmarlon/armory-spin/main/spinnakerservice.yml)
 
-Create ns:
+Create namespace:
 ```
 kubectl create ns spinnaker
 ```
