@@ -1,0 +1,7 @@
+kubernetes:
+  accounts:
+  - name: prod-01
+    namespace: prod
+    # /kubeconfigfiles/ is the path to the config files
+    # as mounted from the `kubeconfigs-secret` Kubernetes secret
+    kubeconfigFile: /kubeconfigfiles/kubecfg-prod-01.yaml
