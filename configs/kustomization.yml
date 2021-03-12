@@ -1,0 +1,90 @@
+#-----------------------------------------------------------------------------------------------------------------------
+# Minnaker recipe
+#
+# Self contained Spinnaker installation with no external dependencies and no additional configuration needed.
+# Not for production use.
+#
+# Features:
+# - One Kubernetes account (Spinnaker's own cluster) for deployment targets
+# - One dockerhub account for public repositories
+# - One HTTP account enabled
+# - Spinnaker configured to use the same host for Deck and Gate
+# - Spinnaker Basic Auth enabled
+# - Spinnaker exposed via Traefik
+# - Self hosted minio as a persistent storage
+# - Self hosted redis backend for caching and temporal storage of services
+#-----------------------------------------------------------------------------------------------------------------------
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+# Namespace where spinnaker and all its infrastructure will be installed.
+# NOTE: If changed, also change it in all ClusterRoleBinding namespace references.
+namespace: spinnaker
+
+resources:
+  - spinnakerservice.yml                    # (Mandatory). Base spinnaker manifest
+  - infrastructure/redis.yml                # Redis for caching
+  - infrastructure/minio.yml                # Self hosted minio, a S3 compatible data store
+  - infrastructure/mysql.yml                # MySQL server needed for using SQL backend in Spinnaker
+  - infrastructure/opa.yml                  # OPA server for using with Armory's policy engine, for enforcing pipeline policies
+  - accounts/kubernetes/spin-sa.yml         # Kubernetes service account needed by patch-kube.yml
+  - expose/ingress-traefik.yml              # Use Traefik for Ingress
+  # - infrastructure/prometheus-grafana/kustomization.yml  # TODO - investigate what changes (if necessary) need to be made to support canarying
+
+bases:
+  - agent-service
+
+configMapGenerator:
+ # ConfigMap holding OPA policy definitions to use by Armory's policy engine. Required by patch-policyengine.yml
+ - name: spin-policies
+   files:
+     - armory/policies/manual-judgement.rego
+ - name: kubesvc-config
+   behavior: merge
+   files:
+     - kubesvc.yaml
+
+secretGenerator:
+  - name: kubeconfigs-secret
+    files:
+    # a list of all needed kubeconfigs
+    - kubecfgs/kubecfg-prod-01.yaml
+
+patchesStrategicMerge:
+  - persistence/patch-redis.yml             # Manually manage redis
+  - persistence/patch-minio.yml             # (Mandatory). Persistence to store spinnaker applications and pipelines
+  - persistence/patch-sql-clouddriver.yml   # setup clouddriver to use SQL for storage
+  - persistence/patch-sql-front50.yml       # setup front50 to use SQL for storage
+  - persistence/patch-sql-orca.yml          # setup orca to use SQL for storage
+
+  - expose/patch-urls.yml                   # Manually expose spinnaker for https
+
+  - security/patch-basic-auth.yml           # Enable Basic Auth
+  - security/patch-gate-tomcat-headers.yml  # Add headers to Tomcat for Gate
+
+  # Agent plugin
+  - agent-plugin/config.yaml
+  - agent-plugin/clouddriver-plugin.yaml
+
+  # Artifacts & Accounts
+  - accounts/kubernetes/patch-kube.yml      # Kubernetes accounts
+  - accounts/docker/patch-dockerhub.yml     # Docker accounts
+  - accounts/http/patch-http.yml            # HTTP accounts
+  - accounts/git/patch-github.yml           # Public GitHub Repos
+  - accounts/git/patch-gitrepo.yml          # Public Git Repos
+  # - accounts/notifications/patch-slack.yml # Slack Notifications
+  # - accounts/ci/patch-jenkins.yml          # Jenkins CI Integration
+  # - accounts/canary/prometheus.yml        # TODO - need to add CONFIG STORE
+
+  # Core configurations
+  - core_config/patch-timezone.yml          ## (Optional) adjust the display timezone visible to the user within deck
+  - core_config/patch-features.yml          ## (Optional) adjust features of the deployment {sometimes new features are locked behind feature flags}
+  - core_config/patch-version.yml
+  - core_config/patch-deck.yml
+
+  # Armory features
+  # - armory/patch-vault-secrets.yml        ## (Optional) Enable and configure vault as a secret store for Armory deployment
+  - armory/patch-dinghy.yml
+  - armory/patch-terraformer.yml
+  - armory/patch-diagnostics.yml
+  - armory/patch-policyengine.yml           # Requires spin-policies configmap
